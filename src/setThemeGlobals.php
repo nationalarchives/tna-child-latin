@@ -17,14 +17,13 @@ function setThemeGlobals($environment = null) {
         case 'local':
         case 'development':
             $pre_path = '';
-            $pre_crumbs = array('Site home title' => '/');
+            $pre_crumbs = array('Latin' => '/');
             break;
         case 'external':
             $pre_crumbs = array(
-                'About' => '/about/',
-                'Site home title' => '/about/site-home-title/'
+                'Latin' => '/latin/'
             );
-            $pre_path = '/about/site-home-title';
+            $pre_path = '/latin';
             break;
     }
 }
