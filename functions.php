@@ -1,7 +1,7 @@
 <?php
 
-require_once 'src/setThemeGlobals.php';
-require_once 'src/identifyEnvironmentFromIP.php';
+require_once 'inc/setThemeGlobals.php';
+require_once 'inc/identifyEnvironmentFromIP.php';
 
 // For Breadcrumbs and URLs
 $environment = identifyEnvironmentFromIP($_SERVER['SERVER_ADDR'], $_SERVER['REMOTE_ADDR']);
