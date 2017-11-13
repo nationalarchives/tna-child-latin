@@ -10,7 +10,7 @@ get_header(); ?>
 <div id="primary" class="content-area latin-home">
 	<div class="container">
 		<div class="row">
-			<main id="main" class="col-xs-12 col-sm-8 col-md-8" role="main">
+			<main id="main" class="col-xs-12 col-sm-8" role="main">
 				<?php
 				while ( have_posts() ) : the_post();
 					get_template_part( 'content' );
