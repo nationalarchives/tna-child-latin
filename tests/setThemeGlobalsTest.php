@@ -1,6 +1,6 @@
 <?php
 
-require dirname( __DIR__ ) . '/inc/setThemeGlobals.php';
+require dirname( __DIR__ ) . '/inc/functions-globals.php';
 
 class setThemeGlobalsTest extends PHPUnit_Framework_TestCase
 {
