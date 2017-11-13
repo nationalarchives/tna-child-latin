@@ -1,6 +1,6 @@
 <?php
 
-require dirname(__DIR__) . '/src/setThemeGlobals.php';
+require dirname( __DIR__ ) . '/inc/functions-globals.php';
 
 class setThemeGlobalsTest extends PHPUnit_Framework_TestCase
 {
@@ -24,19 +24,19 @@ class setThemeGlobalsTest extends PHPUnit_Framework_TestCase
     {
         $result = setThemeGlobals('local');
         $this->assertEquals($GLOBALS['pre_path'], '');
-        $this->assertEquals($GLOBALS['pre_crumbs']['Site home title'], '/');
+        $this->assertEquals($GLOBALS['pre_crumbs']['Latin'], '/');
     }
 
     public function testResultForDevelopmentEnvironment()
     {
         $result = setThemeGlobals('development');
         $this->assertEquals($GLOBALS['pre_path'], '');
-        $this->assertEquals($GLOBALS['pre_crumbs']['Site home title'], '/');
+        $this->assertEquals($GLOBALS['pre_crumbs']['Latin'], '/');
     }
 
     public function testResultForExternalTNA() {
         $result = setThemeGlobals('external');
-        $this->assertEquals($GLOBALS['pre_path'], '/about/site-home-title');
+        $this->assertEquals($GLOBALS['pre_path'], '/latin');
     }
 
 
