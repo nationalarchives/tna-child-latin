@@ -3,6 +3,20 @@
  * Shortcode
  */
 
+function latin_activity_shortcode( $atts ) {
+
+	$a = shortcode_atts( array(
+		'activity' => '1'
+	), $atts );
+
+	switch ( $a['activity'] ) {
+		case '1':
+			return activity_1();
+			break;
+	}
+}
+add_shortcode( 'latin', 'latin_activity_shortcode' );
+
 function activity_1() {
 	?>
 	<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" width="525" height="415" id="theMovie">
