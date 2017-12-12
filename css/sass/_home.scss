@@ -2,7 +2,6 @@
 
 .activity {
   position: relative;
-  padding-bottom: 75%; /* 4:3 */
   padding-top: 25px;
   height: 0;
   object,
@@ -13,4 +12,10 @@
     width: 100%;
     height: 100%;
   }
+}
+.four-three {
+  padding-bottom: 75%; /* 4:3 */
+}
+.three-four {
+  padding-bottom: 128%; /* 3:4 */
 }

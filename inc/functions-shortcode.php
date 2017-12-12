@@ -22,29 +22,36 @@ function latin_activity_shortcode( $atts ) {
 		case 'p3':
 			return activity_p3();
 			break;
+		case '3':
+			return activity_3();
+			break;
 	}
 }
 add_shortcode( 'latin', 'latin_activity_shortcode' );
 
 function activity_1() {
-	echo embed_code( '01', 'activity01.swf' );
+	echo embed_code( 'four-three', '01', 'activity01.swf' );
 }
 
 function activity_p2() {
-	echo embed_code( 'p02', 'practice02.swf' );
+	echo embed_code( 'four-three', 'p02', 'practice02.swf' );
 }
 
 function activity_2() {
-	echo embed_code( '02', 'activity02.swf' );
+	echo embed_code( 'four-three', '02', 'activity02.swf' );
 }
 
 function activity_p3() {
-	echo embed_code( 'p03', 'practice03.swf' );
+	echo embed_code( 'four-three', 'p03', 'practice03.swf' );
 }
 
-function embed_code( $id, $file ) {
+function activity_3() {
+	echo embed_code( 'three-four', '03', 'activity03.swf' );
+}
+
+function embed_code( $ratio, $id, $file ) {
 	$dir = get_stylesheet_directory_uri();
-	$html = '<div class="activity">
+	$html = '<div class="activity %s">
 				<object id="activity-%s">
 					<param name="src" value="%s/activities/%s">
 					<param name="menu" value="false">
@@ -54,5 +61,5 @@ function embed_code( $id, $file ) {
 				</object>
 			</div>';
 
-	return sprintf( $html, $id, $dir, $file, $dir, $file, $id );
+	return sprintf( $html, $ratio, $id, $dir, $file, $dir, $file, $id );
 }
