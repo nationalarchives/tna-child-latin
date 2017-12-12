@@ -19,6 +19,9 @@ function latin_activity_shortcode( $atts ) {
 		case '2':
 			return activity_2();
 			break;
+		case 'p3':
+			return activity_p3();
+			break;
 	}
 }
 add_shortcode( 'latin', 'latin_activity_shortcode' );
@@ -35,15 +38,19 @@ function activity_2() {
 	echo embed_code( '02', 'activity02.swf' );
 }
 
+function activity_p3() {
+	echo embed_code( 'p03', 'practice03.swf' );
+}
+
 function embed_code( $id, $file ) {
 	$dir = get_stylesheet_directory_uri();
 	$html = '<div class="activity">
-				<object id="activity%s">
+				<object id="activity-%s">
 					<param name="src" value="%s/activities/%s">
 					<param name="menu" value="false">
 					<param name="wmode" value="transparent">
 					<PARAM NAME="SCALE" VALUE="exactfit">
-					<embed src="%s/activities/%s" SCALE="exactfit" menu="false" wmode="transparent" name="activity%s">
+					<embed src="%s/activities/%s" SCALE="exactfit" menu="false" wmode="transparent" name="activity-%s">
 				</object>
 			</div>';
 
