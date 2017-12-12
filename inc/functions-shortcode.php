@@ -21,29 +21,24 @@ function latin_activity_shortcode( $atts ) {
 add_shortcode( 'latin', 'latin_activity_shortcode' );
 
 function activity_1() {
-	?>
-	<div class="activity">
-		<object id="activity01">
-			<param name="src" value="<?php echo get_stylesheet_directory_uri() ?>/activities/activity01.swf">
-			<param name="menu" value="false">
-			<param name="wmode" value="transparent">
-			<PARAM NAME="SCALE" VALUE="exactfit">
-			<embed src="<?php echo get_stylesheet_directory_uri() ?>/activities/activity01.swf" SCALE="exactfit" menu="false" wmode="transparent" name="activity01">
-		</object>
-	</div>
-<?php
+	echo embed_code( '01', 'activity01.swf' );
 }
 
 function activity_2() {
-	?>
-	<div class="activity">
-		<object id="activity02">
-			<param name="src" value="<?php echo get_stylesheet_directory_uri() ?>/activities/activity02.swf">
-			<param name="menu" value="false">
-			<param name="wmode" value="transparent">
-			<PARAM NAME="SCALE" VALUE="exactfit">
-			<embed src="<?php echo get_stylesheet_directory_uri() ?>/activities/activity02.swf" SCALE="exactfit" menu="false" wmode="transparent" name="activity02">
-		</object>
-	</div>
-	<?php
+	echo embed_code( '02', 'activity02.swf' );
+}
+
+function embed_code( $id, $file ) {
+	$dir = get_stylesheet_directory_uri();
+	$html = '<div class="activity">
+				<object id="activity%s">
+					<param name="src" value="%s/activities/%s">
+					<param name="menu" value="false">
+					<param name="wmode" value="transparent">
+					<PARAM NAME="SCALE" VALUE="exactfit">
+					<embed src="%s/activities/%s" SCALE="exactfit" menu="false" wmode="transparent" name="activity%s">
+				</object>
+			</div>';
+
+	return sprintf( $html, $id, $dir, $file, $dir, $file, $id );
 }
