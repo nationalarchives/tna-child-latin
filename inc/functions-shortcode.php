@@ -194,7 +194,7 @@ function embed_code( $class, $id, $folder, $file ) {
 
 function iframe_activity( $activity ) {
 	$file = get_stylesheet_directory_uri().$activity;
-	$html = '<div class="iframe-container">
+	$html = '<div class="activity-container">
 				<div class="iframe">
 					<iframe src="%s" frameborder="0" allowfullscreen></iframe>
 				</div>

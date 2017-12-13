@@ -25,18 +25,14 @@
   .activity-container .three-four {
     padding-bottom: 128%;
     /* 3:4 */ }
-
-.iframe-container {
-  margin: 1em auto;
-  max-width: 668px; }
-  .iframe-container .iframe {
+  .activity-container .iframe {
     margin: 1em auto;
     position: relative;
     padding-top: 25px;
     height: 0;
     padding-bottom: 128%;
     /* 3:4 */ }
-    .iframe-container .iframe iframe {
+    .activity-container .iframe iframe {
       position: absolute;
       top: 0;
       left: 0;
