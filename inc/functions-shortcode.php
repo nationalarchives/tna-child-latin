@@ -124,7 +124,7 @@ function activity_p6() {
 }
 
 function activity_6() {
-	echo embed_code( 'three-four', '06', 'beginner-activities', 'activity06.swf' );
+	echo iframe_activity( '/beginner-activities/activity06.html' );
 }
 
 function activity_p7() {
