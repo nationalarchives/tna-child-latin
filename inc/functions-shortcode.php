@@ -6,10 +6,10 @@
 function latin_activity_shortcode( $atts ) {
 
 	$a = shortcode_atts( array(
-		'activity' => '1'
+		'beginner-activity' => '1'
 	), $atts );
 
-	switch ( $a['activity'] ) {
+	switch ( $a['beginner-activity'] ) {
 		case '1':
 			return activity_1();
 			break;
@@ -36,6 +36,12 @@ function latin_activity_shortcode( $atts ) {
 			break;
 		case '5':
 			return activity_5();
+			break;
+		case 'p6':
+			return activity_p6();
+			break;
+		case '6':
+			return activity_6();
 			break;
 	}
 }
@@ -75,6 +81,14 @@ function activity_p5() {
 
 function activity_5() {
 	echo embed_code( 'two-one', '05', 'beginner-activities', 'activity05.swf' );
+}
+
+function activity_p6() {
+	echo embed_code( 'four-three', 'p06', 'beginner-activities', 'practice06.swf' );
+}
+
+function activity_6() {
+	echo embed_code( 'three-four', '06', 'beginner-activities', 'activity06.swf' );
 }
 
 function embed_code( $class, $id, $folder, $file ) {
