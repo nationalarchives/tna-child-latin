@@ -100,7 +100,7 @@ function activity_p3() {
 }
 
 function activity_3() {
-	echo embed_code( 'three-four', '03', 'beginner-activities', 'activity03.swf' );
+	echo iframe_activity_3();
 }
 
 function activity_p4() {
@@ -190,4 +190,14 @@ function embed_code( $class, $id, $folder, $file ) {
 			</div>';
 
 	return sprintf( $html, $class, $id, $dir, $file, $dir, $file, $id );
+}
+
+function iframe_activity_3() {
+	?>
+	<div class="iframe-container">
+		<div class="iframe">
+			<iframe src="<?php echo get_stylesheet_directory_uri() ?>/beginner-activities/activity03.html" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+<?php
 }
