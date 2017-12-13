@@ -25,6 +25,12 @@ function latin_activity_shortcode( $atts ) {
 		case '3':
 			return activity_3();
 			break;
+		case 'p4':
+			return activity_p4();
+			break;
+		case '4':
+			return activity_4();
+			break;
 	}
 }
 add_shortcode( 'latin', 'latin_activity_shortcode' );
@@ -49,7 +55,15 @@ function activity_3() {
 	echo embed_code( 'three-four', '03', 'activity03.swf' );
 }
 
-function embed_code( $ratio, $id, $file ) {
+function activity_p4() {
+	echo embed_code( 'four-three', 'p04', 'practice04.swf' );
+}
+
+function activity_4() {
+	echo embed_code( 'four-three', '04', 'activity04.swf' );
+}
+
+function embed_code( $class, $id, $file ) {
 	$dir = get_stylesheet_directory_uri();
 	$html = '<div class="activity %s">
 				<object id="activity-%s">
@@ -61,5 +75,5 @@ function embed_code( $ratio, $id, $file ) {
 				</object>
 			</div>';
 
-	return sprintf( $html, $ratio, $id, $dir, $file, $dir, $file, $id );
+	return sprintf( $html, $class, $id, $dir, $file, $dir, $file, $id );
 }
