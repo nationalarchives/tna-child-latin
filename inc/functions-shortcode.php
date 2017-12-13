@@ -100,7 +100,7 @@ function activity_p3() {
 }
 
 function activity_3() {
-	echo iframe_activity_3();
+	echo iframe_activity( '/beginner-activities/activity03.html' );
 }
 
 function activity_p4() {
@@ -192,12 +192,13 @@ function embed_code( $class, $id, $folder, $file ) {
 	return sprintf( $html, $class, $id, $dir, $file, $dir, $file, $id );
 }
 
-function iframe_activity_3() {
-	?>
-	<div class="iframe-container">
-		<div class="iframe">
-			<iframe src="<?php echo get_stylesheet_directory_uri() ?>/beginner-activities/activity03.html" frameborder="0" allowfullscreen></iframe>
-		</div>
-	</div>
-<?php
+function iframe_activity( $activity ) {
+	$file = get_stylesheet_directory_uri().$activity;
+	$html = '<div class="iframe-container">
+				<div class="iframe">
+					<iframe src="%s" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>';
+
+	return sprintf( $html, $file );
 }
