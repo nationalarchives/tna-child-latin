@@ -31,6 +31,12 @@ function latin_activity_shortcode( $atts ) {
 		case '4':
 			return activity_4();
 			break;
+		case 'p5':
+			return activity_p5();
+			break;
+		case '5':
+			return activity_5();
+			break;
 	}
 }
 add_shortcode( 'latin', 'latin_activity_shortcode' );
@@ -61,6 +67,14 @@ function activity_p4() {
 
 function activity_4() {
 	echo embed_code( 'four-three', '04', 'beginner-activities', 'activity04.swf' );
+}
+
+function activity_p5() {
+	echo embed_code( 'four-three', 'p05', 'beginner-activities', 'practice05.swf' );
+}
+
+function activity_5() {
+	echo embed_code( 'two-one', '05', 'beginner-activities', 'activity05.swf' );
 }
 
 function embed_code( $class, $id, $folder, $file ) {
