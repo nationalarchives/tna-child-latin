@@ -36,42 +36,42 @@ function latin_activity_shortcode( $atts ) {
 add_shortcode( 'latin', 'latin_activity_shortcode' );
 
 function activity_1() {
-	echo embed_code( 'four-three', '01', 'activity01.swf' );
+	echo embed_code( 'four-three', '01', 'beginner-activities', 'activity01.swf' );
 }
 
 function activity_p2() {
-	echo embed_code( 'four-three', 'p02', 'practice02.swf' );
+	echo embed_code( 'four-three', 'p02', 'beginner-activities', 'practice02.swf' );
 }
 
 function activity_2() {
-	echo embed_code( 'four-three', '02', 'activity02.swf' );
+	echo embed_code( 'four-three', '02', 'beginner-activities', 'activity02.swf' );
 }
 
 function activity_p3() {
-	echo embed_code( 'four-three', 'p03', 'practice03.swf' );
+	echo embed_code( 'four-three', 'p03', 'beginner-activities', 'practice03.swf' );
 }
 
 function activity_3() {
-	echo embed_code( 'three-four', '03', 'activity03.swf' );
+	echo embed_code( 'three-four', '03', 'beginner-activities', 'activity03.swf' );
 }
 
 function activity_p4() {
-	echo embed_code( 'four-three', 'p04', 'practice04.swf' );
+	echo embed_code( 'four-three', 'p04', 'beginner-activities', 'practice04.swf' );
 }
 
 function activity_4() {
-	echo embed_code( 'four-three', '04', 'activity04.swf' );
+	echo embed_code( 'four-three', '04', 'beginner-activities', 'activity04.swf' );
 }
 
-function embed_code( $class, $id, $file ) {
-	$dir = get_stylesheet_directory_uri();
+function embed_code( $class, $id, $folder, $file ) {
+	$dir = get_stylesheet_directory_uri().'/'.$folder;
 	$html = '<div class="activity %s">
 				<object id="activity-%s">
-					<param name="src" value="%s/activities/%s">
+					<param name="src" value="%s/%s">
 					<param name="menu" value="false">
 					<param name="wmode" value="transparent">
 					<PARAM NAME="SCALE" VALUE="exactfit">
-					<embed src="%s/activities/%s" SCALE="exactfit" menu="false" wmode="transparent" name="activity-%s">
+					<embed src="%s/%s" SCALE="exactfit" menu="false" wmode="transparent" name="activity-%s">
 				</object>
 			</div>';
 
