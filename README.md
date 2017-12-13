@@ -3,3 +3,15 @@
 # tna-child-latin
 
 Child theme for Latin tutorials
+
+## Activity shortcodes
+
+### Usage
+
+To display a beginners activity use the follow code example, the value represents the lesson number:
+
+`[latin beginner-activity="3"]`
+
+To display a beginners practice activity prefix the value with a `p`:
+
+`[latin beginner-activity="p3"]`
