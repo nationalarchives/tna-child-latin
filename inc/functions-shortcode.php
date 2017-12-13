@@ -177,14 +177,16 @@ function activity_12() {
 
 function embed_code( $class, $id, $folder, $file ) {
 	$dir = get_stylesheet_directory_uri().'/'.$folder;
-	$html = '<div class="activity %s">
-				<object id="activity-%s">
-					<param name="src" value="%s/%s">
-					<param name="menu" value="false">
-					<param name="wmode" value="transparent">
-					<PARAM NAME="SCALE" VALUE="exactfit">
-					<embed src="%s/%s" SCALE="exactfit" menu="false" wmode="transparent" name="activity-%s">
-				</object>
+	$html = '<div class="activity-container">
+				<div class="activity %s">
+					<object id="activity-%s">
+						<param name="src" value="%s/%s">
+						<param name="menu" value="false">
+						<param name="wmode" value="transparent">
+						<PARAM NAME="SCALE" VALUE="exactfit">
+						<embed src="%s/%s" SCALE="exactfit" menu="false" wmode="transparent" name="activity-%s">
+					</object>
+				</div>
 			</div>';
 
 	return sprintf( $html, $class, $id, $dir, $file, $dir, $file, $id );
