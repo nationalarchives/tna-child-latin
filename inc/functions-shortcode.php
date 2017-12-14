@@ -12,73 +12,73 @@ function latin_activity_shortcode( $atts ) {
 
 	switch ( $a['beginner-activity'] ) {
 		case '1':
-			return activity_1();
+			return embed_code( 'four-three', '01', 'beginner-activities', 'activity01.swf' );
 			break;
 		case 'p2':
-			return activity_p2();
+			return embed_code( 'four-three', 'p02', 'beginner-activities', 'practice02.swf' );
 			break;
 		case '2':
-			return activity_2();
+			return embed_code( 'four-three', '02', 'beginner-activities', 'activity02.swf' );
 			break;
 		case 'p3':
-			return activity_p3();
+			return embed_code( 'four-three', 'p03', 'beginner-activities', 'practice03.swf' );
 			break;
 		case '3':
-			return activity_3();
+			return iframe_activity( '125%', '/beginner-activities/activity03.html' );
 			break;
 		case 'p4':
-			return activity_p4();
+			return embed_code( 'four-three', 'p04', 'beginner-activities', 'practice04.swf' );
 			break;
 		case '4':
-			return activity_4();
+			return embed_code( 'four-three', '04', 'beginner-activities', 'activity04.swf' );
 			break;
 		case 'p5':
-			return activity_p5();
+			return embed_code( 'four-three', 'p05', 'beginner-activities', 'practice05.swf' );
 			break;
 		case '5':
-			return activity_5();
+			return embed_code( 'two-one', '05', 'beginner-activities', 'activity05.swf' );
 			break;
 		case 'p6':
-			return activity_p6();
+			return embed_code( 'four-three', 'p06', 'beginner-activities', 'practice06.swf' );
 			break;
 		case '6':
-			return activity_6();
+			return iframe_activity( '125%', '/beginner-activities/activity06.html' );
 			break;
 		case 'p7':
-			return activity_p7();
+			return embed_code( 'four-three', 'p07', 'beginner-activities', 'practice07.swf' );
 			break;
 		case '7':
-			return activity_7();
+			return embed_code( 'four-three', '07', 'beginner-activities', 'activity07.swf' );
 			break;
 		case 'p8':
-			return activity_p8();
+			return embed_code( 'four-three', 'p08', 'beginner-activities', 'practice08.swf' );
 			break;
 		case '8':
-			return activity_8();
+			return embed_code( 'two-one', '08', 'beginner-activities', 'activity08.swf' );
 			break;
 		case 'p9':
-			return activity_p9();
+			return embed_code( 'four-three', 'p09', 'beginner-activities', 'practice09.swf' );
 			break;
 		case '9':
-			return activity_9();
+			return embed_code( 'four-three', '09', 'beginner-activities', 'activity09.swf' );
 			break;
 		case 'p10':
-			return activity_p10();
+			return embed_code( 'four-three', 'p10', 'beginner-activities', 'practice10.swf' );
 			break;
 		case '10':
-			return activity_10();
+			return embed_code( 'two-one', '10', 'beginner-activities', 'activity10.swf' );
 			break;
 		case 'p11':
-			return activity_p11();
+			return embed_code( 'four-three', 'p11', 'beginner-activities', 'practice11.swf' );
 			break;
 		case '11':
-			return activity_11();
+			return embed_code( 'four-three', '11', 'beginner-activities', 'activity11.swf' );
 			break;
 		case 'p12':
-			return activity_p12();
+			return embed_code( 'four-three', 'p12', 'beginner-activities', 'practice12.swf' );
 			break;
 		case '12':
-			return activity_12();
+			return embed_code( 'one-one', '12', 'beginner-activities', 'activity12.swf' );
 			break;
 	}
 
@@ -88,98 +88,6 @@ function latin_activity_shortcode( $atts ) {
 	}
 }
 add_shortcode( 'latin', 'latin_activity_shortcode' );
-
-function activity_1() {
-	return embed_code( 'four-three', '01', 'beginner-activities', 'activity01.swf' );
-}
-
-function activity_p2() {
-	return embed_code( 'four-three', 'p02', 'beginner-activities', 'practice02.swf' );
-}
-
-function activity_2() {
-	return embed_code( 'four-three', '02', 'beginner-activities', 'activity02.swf' );
-}
-
-function activity_p3() {
-	return embed_code( 'four-three', 'p03', 'beginner-activities', 'practice03.swf' );
-}
-
-function activity_3() {
-	return iframe_activity( '125%', '/beginner-activities/activity03.html' );
-}
-
-function activity_p4() {
-	return embed_code( 'four-three', 'p04', 'beginner-activities', 'practice04.swf' );
-}
-
-function activity_4() {
-	return embed_code( 'four-three', '04', 'beginner-activities', 'activity04.swf' );
-}
-
-function activity_p5() {
-	return embed_code( 'four-three', 'p05', 'beginner-activities', 'practice05.swf' );
-}
-
-function activity_5() {
-	return embed_code( 'two-one', '05', 'beginner-activities', 'activity05.swf' );
-}
-
-function activity_p6() {
-	return embed_code( 'four-three', 'p06', 'beginner-activities', 'practice06.swf' );
-}
-
-function activity_6() {
-	return iframe_activity( '125%', '/beginner-activities/activity06.html' );
-}
-
-function activity_p7() {
-	return embed_code( 'four-three', 'p07', 'beginner-activities', 'practice07.swf' );
-}
-
-function activity_7() {
-	return embed_code( 'four-three', '07', 'beginner-activities', 'activity07.swf' );
-}
-
-function activity_p8() {
-	return embed_code( 'four-three', 'p08', 'beginner-activities', 'practice08.swf' );
-}
-
-function activity_8() {
-	return embed_code( 'two-one', '08', 'beginner-activities', 'activity08.swf' );
-}
-
-function activity_p9() {
-	return embed_code( 'four-three', 'p09', 'beginner-activities', 'practice09.swf' );
-}
-
-function activity_9() {
-	return embed_code( 'four-three', '09', 'beginner-activities', 'activity09.swf' );
-}
-
-function activity_p10() {
-	return embed_code( 'four-three', 'p10', 'beginner-activities', 'practice10.swf' );
-}
-
-function activity_10() {
-	return embed_code( 'two-one', '10', 'beginner-activities', 'activity10.swf' );
-}
-
-function activity_p11() {
-	return embed_code( 'four-three', 'p11', 'beginner-activities', 'practice11.swf' );
-}
-
-function activity_11() {
-	return embed_code( 'four-three', '11', 'beginner-activities', 'activity11.swf' );
-}
-
-function activity_p12() {
-	return embed_code( 'four-three', 'p12', 'beginner-activities', 'practice12.swf' );
-}
-
-function activity_12() {
-	return embed_code( 'one-one', '12', 'beginner-activities', 'activity12.swf' );
-}
 
 function advanced_activity( $lesson ) {
 	return iframe_activity( '90%', '/advanced-activities/activity'.$lesson.'.html' );
