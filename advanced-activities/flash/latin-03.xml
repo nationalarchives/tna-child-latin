@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<exercise id="03">
+	<question>
+		<latin><i>audiam</i></latin>
+		<clue><![CDATA[<i>audio, audire, audivi, auditum</i> (4) to hear]]></clue>
+		<english><![CDATA[I will hear]]></english>
+	</question>
+	<question>
+		<latin><i>liberabit</i></latin>
+		<clue><![CDATA[<i>libero, liberare, liberavi, liberatum</i> (1) to free]]></clue>
+		<english><![CDATA[he/she/it will free]]></english>
+	</question>
+	<question>
+		<latin><i>vocabimus</i></latin>
+		<clue><![CDATA[<i>voco, vocare, vocavi, vocatum</i> (1) to call]]></clue>
+		<english><![CDATA[we will call]]></english>
+	</question>
+	<question>
+		<latin><i>legabo</i></latin>
+		<clue><![CDATA[<i>lego, legare, legavi, legatum</i> (1) to bequeath]]></clue>
+		<english><![CDATA[I will bequeath]]></english>
+	</question>
+	<question>
+		<latin><i>mittet</i></latin>
+		<clue><![CDATA[<i>mitto, mittere, misi, missum</i> (3) to send]]></clue>
+		<english><![CDATA[he/she/it will send]]></english>
+	</question>	
+	<question>
+		<latin><i>habebunt</i></latin>
+		<clue><![CDATA[<i>habeo, habere, habui, habitum</i> (2) to have]]></clue>
+		<english><![CDATA[they will have]]></english>
+	</question>
+	<question>
+		<latin><i>solvemus</i></latin>
+		<clue><![CDATA[<i>solvo, solvere, solvi, solutum</i> (3) to pay]]></clue>
+		<english><![CDATA[we will pay]]></english>
+	</question>
+	<question>
+		<latin><i>videbis</i></latin>
+		<clue><![CDATA[<i>video, videre, vidi, visum</i> (2) to see]]></clue>
+		<english><![CDATA[you will see]]></english>
+	</question>
+	<question>
+		<latin><i>scient</i></latin>
+		<clue><![CDATA[<i>scio, scire, scivi, scitum</i> (4) to know]]></clue>
+		<english><![CDATA[they will know]]></english>
+	</question>
+	<question>
+		<latin><i>dices</i></latin>
+		<clue><![CDATA[<i>dico, dicere, dixi, dictum</i> (3) to say]]></clue>
+		<english><![CDATA[you will say]]></english>
+	</question>										
+</exercise>

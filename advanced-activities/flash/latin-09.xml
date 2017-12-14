@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<exercise id="09">
+	<question>
+		<latin><i>furavissent</i></latin>
+		<clue><![CDATA[<i>furo, furare, furavi, furatum</i> (1) to steal]]></clue>
+		<english><![CDATA[they might have stolen]]></english>
+	</question>
+	<question>
+		<latin><i>rexerim</i></latin>
+		<clue><![CDATA[<i>rego, regere, rexi, rectum</i> (3) to rule]]></clue>
+		<english><![CDATA[I may have ruled]]></english>
+	</question>
+	<question>
+		<latin><i>denegent</i></latin>
+		<clue><![CDATA[<i>denego, denegare, denegavi, denegatum</i> (1) to deny]]></clue>
+		<english><![CDATA[they may deny]]></english>
+	</question>
+	<question>
+		<latin><i>preberetur</i></latin>
+		<clue><![CDATA[<i>prebeo, prebere, prebui, prebitum</i> (2) to offer]]></clue>
+		<english><![CDATA[it might be offered]]></english>
+	</question>
+	<question>
+		<latin><i>eligamur</i></latin>
+		<clue><![CDATA[<i>eligo, eligere, elegi, electum</i> (3) to choose]]></clue>
+		<english><![CDATA[we may be chosen]]></english>
+	</question>	
+	<question>
+		<latin><i>occupemus</i></latin>
+		<clue><![CDATA[<i>occupo, occupare, occupavi, occupatum</i> (1) to occupy]]></clue>
+		<english><![CDATA[we may occupy]]></english>
+	</question>
+	<question>
+		<latin><i>occiderem</i></latin>
+		<clue><![CDATA[<i>occido, occidere, occidi, occisum</i> (3) to kill]]></clue>
+		<english><![CDATA[I might kill]]></english>
+	</question>
+	<question>
+		<latin><i>secarent</i></latin>
+		<clue><![CDATA[<i>seco, secare, secui, sectum</i> (1) to cut]]></clue>
+		<english><![CDATA[they might cut]]></english>
+	</question>
+	<question>
+		<latin><i>recusati sint	</i></latin>
+		<clue><![CDATA[<i>recuso, recusare, recusavi, recusatum</i> (1) to refuse]]></clue>
+		<english><![CDATA[they may have been refused]]></english>
+	</question>
+	<question>
+		<latin><i>habear</i></latin>
+		<clue><![CDATA[<i>habeo, habere, habui, habitum</i> (2) to have]]></clue>
+		<english><![CDATA[I may be had]]></english>
+	</question>										
+</exercise>

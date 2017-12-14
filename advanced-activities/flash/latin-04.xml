@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<exercise id="04">
+	<question>
+		<latin><i>satisfecerit</i></latin>
+		<clue><![CDATA[<i>satisfacio, satisfacere, satisfeci, satisfactum</i> (3) to satisfy, give satisfaction]]></clue>
+		<english><![CDATA[he/she/it will have satisfied]]></english>
+	</question>
+	<question>
+		<latin><i>feoffavero</i></latin>
+		<clue><![CDATA[<i>feoffo, feoffare, feoffavi, feoffatum</i> (1) to enfeoff]]></clue>
+		<english><![CDATA[I will have enfeoffed]]></english>
+	</question>
+	<question>
+		<latin><i>fecerimus</i></latin>
+		<clue><![CDATA[<i>facio, facere, feci, factum</i> (3) to do]]></clue>
+		<english><![CDATA[we will have done]]></english>
+	</question>
+	<question>
+		<latin><i>summonueritis</i></latin>
+		<clue><![CDATA[<i>summoneo, summonere, summonui, summonitum</i> (2) to summon]]></clue>
+		<english><![CDATA[you will have summoned]]></english>
+	</question>
+	<question>
+		<latin><i>steterint</i></latin>
+		<clue><![CDATA[<i>sto, stare, steti, statum</i> (1) to stand]]></clue>
+		<english><![CDATA[they will have stood]]></english>
+	</question>	
+	<question>
+		<latin><i>obligaverit</i></latin>
+		<clue><![CDATA[<i>obligo, obligare, obligavi, obligatum</i> (1) to bind]]></clue>
+		<english><![CDATA[he/she/it will have bound]]></english>
+	</question>
+	<question>
+		<latin><i>ceperis</i></latin>
+		<clue><![CDATA[<i>capio, capere, cepi, captum</i> (3) to take]]></clue>
+		<english><![CDATA[you will have taken]]></english>
+	</question>
+	<question>
+		<latin><i>venerit</i></latin>
+		<clue><![CDATA[<i>venio, venire, veni, ventum</i> (4) to come]]></clue>
+		<english><![CDATA[he/she/it will have come]]></english>
+	</question>
+	<question>
+		<latin><i>concesserint </i></latin>
+		<clue><![CDATA[<i>concedo, concedere, concessi, concessum</i> (3) to grant]]></clue>
+		<english><![CDATA[they will have granted]]></english>
+	</question>
+	<question>
+		<latin><i>confirmaverimus </i></latin>
+		<clue><![CDATA[<i>confirmo, confirmare, confirmavi, confirmatum</i> (1) to confirm]]></clue>
+		<english><![CDATA[we will have confirmed]]></english>
+	</question>										
+</exercise>

@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<exercise id="11">
+	<question>
+		<latin><i>clamandum</i></latin>
+		<clue><![CDATA[<i>clamo, clamare, clamavi, clamatum </i> (1)]]></clue>
+		<english><![CDATA[Gerund of 'to claim']]></english>
+	</question>
+	<question>
+		<latin><i>movendus,-a,-um</i></latin>
+		<clue><![CDATA[<i>moveo, movere, movi, motum</i> (2)]]></clue>
+		<english><![CDATA[Gerundive of 'to move, set in motion']]></english>
+	</question>
+	<question>
+		<latin><i>mittendum</i></latin>
+		<clue><![CDATA[<i>mitto, mittere, misi, missum</i> (3)]]></clue>
+		<english><![CDATA[Gerund of 'to send']]></english>
+	</question>
+	<question>
+		<latin><i>obediendus,-a,-um</i></latin>
+		<clue><![CDATA[<i>obedio, obedire, obedii/obedivi, obeditum</i> (4)]]></clue>
+		<english><![CDATA[Gerundive of 'to obey']]></english>
+	</question>
+	<question>
+		<latin><i>optinedum</i></latin>
+		<clue><![CDATA[<i>optineo, optinere, optinui, optentum </i> (2)]]></clue>
+		<english><![CDATA[Gerund of 'to obtain']]></english>
+	</question>	
+	<question>
+		<latin><i>ordinandus,-a,-um</i></latin>
+		<clue><![CDATA[<i>ordino, ordinare, ordinavi, ordinatum </i> (1)]]></clue>
+		<english><![CDATA[Gerundive of 'to ordain, appoint']]></english>
+	</question>
+	<question>
+		<latin><i>habendum</i></latin>
+		<clue><![CDATA[<i>habeo, habere, habui, habitum </i> (2)]]></clue>
+		<english><![CDATA[Gerund of 'to have']]></english>
+	</question>
+	<question>
+		<latin><i>audiendum</i></latin>
+		<clue><![CDATA[<i>audio, audire, audivi, auditum]] (4)]]></clue>
+		<english><![CDATA[Gerund of 'to hear']]></english>
+	</question>
+	<question>
+		<latin><i>solvendus,-a,-um</i></latin>
+		<clue><![CDATA[<i>solvo, solvere, solvi, solutum </i>(3)]]></clue>
+		<english><![CDATA[Gerundive of 'to pay']]></english>
+	</question>
+	<question>
+		<latin><i>sequendum</i></latin>
+		<clue><![CDATA[<i>sequor, sequi, secutus sum</i> (3, depon.)]]></clue>
+		<english><![CDATA[Gerund of 'to follow']]></english>
+	</question>										
+</exercise>

@@ -6,7 +6,8 @@
 function latin_activity_shortcode( $atts ) {
 
 	$a = shortcode_atts( array(
-		'beginner-activity' => '1'
+		'beginner-activity' => '',
+		'advanced-activity' => ''
 	), $atts );
 
 	switch ( $a['beginner-activity'] ) {
@@ -80,6 +81,12 @@ function latin_activity_shortcode( $atts ) {
 			return activity_12();
 			break;
 	}
+
+	switch ( $a['advanced-activity'] ) {
+		case '1':
+			return advanced_activity_1();
+			break;
+	}
 }
 add_shortcode( 'latin', 'latin_activity_shortcode' );
 
@@ -100,7 +107,7 @@ function activity_p3() {
 }
 
 function activity_3() {
-	echo iframe_activity( '/beginner-activities/activity03.html' );
+	echo iframe_activity( '128%', '/beginner-activities/activity03.html' );
 }
 
 function activity_p4() {
@@ -124,7 +131,7 @@ function activity_p6() {
 }
 
 function activity_6() {
-	echo iframe_activity( '/beginner-activities/activity06.html' );
+	echo iframe_activity( '128%', '/beginner-activities/activity06.html' );
 }
 
 function activity_p7() {
@@ -175,6 +182,10 @@ function activity_12() {
 	echo embed_code( 'one-one', '12', 'beginner-activities', 'activity12.swf' );
 }
 
+function advanced_activity_1() {
+	echo iframe_activity( '90%', '/advanced-activities/activity01.html' );
+}
+
 function embed_code( $class, $id, $folder, $file ) {
 	$dir = get_stylesheet_directory_uri().'/'.$folder;
 	$html = '<div class="activity-container">
@@ -192,13 +203,13 @@ function embed_code( $class, $id, $folder, $file ) {
 	return sprintf( $html, $class, $id, $dir, $file, $dir, $file, $id );
 }
 
-function iframe_activity( $activity ) {
+function iframe_activity( $ratio, $activity ) {
 	$file = get_stylesheet_directory_uri().$activity;
 	$html = '<div class="activity-container">
-				<div class="iframe">
+				<div class="iframe" style="padding-bottom:%s">
 					<iframe src="%s" frameborder="0" allowfullscreen></iframe>
 				</div>
 			</div>';
 
-	return sprintf( $html, $file );
+	return sprintf( $html, $ratio, $file );
 }

@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<exercise id="08">
+	<question>
+		<latin><i>albissimus</i></latin>
+		<clue><![CDATA[<i>albus, -a, -um</i> white]]></clue>
+		<english><![CDATA[whitest]]></english>
+	</question>
+	<question>
+		<latin><i>antiquior</i></latin>
+		<clue><![CDATA[<i>antiquus, -a, -um</i> old]]></clue>
+		<english><![CDATA[older]]></english>
+	</question>
+	<question>
+		<latin><i>beatissime</i></latin>
+		<clue><![CDATA[<i>beatus, -a, -um</i> blessed]]></clue>
+		<english><![CDATA[most blessedly]]></english>
+	</question>
+	<question>
+		<latin><i>clare</i></latin>
+		<clue><![CDATA[<i>clarus, -a, -um</i> clear]]></clue>
+		<english><![CDATA[clearly]]></english>
+	</question>
+	<question>
+		<latin><i>devotius</i></latin>
+		<clue><![CDATA[<i>devotus, -a, -um</i> devoted]]></clue>
+		<english><![CDATA[more devoted <font color="#CC0000">or</font> more devotedly
+(comparative adjective neuter singular <font color="#CC0000">or</font> comparative adverb)]]></english>
+	</question>	
+	<question>
+		<latin><i>difficillimus</i></latin>
+		<clue><![CDATA[<i>difficilis, -is, -e</i> difficult]]></clue>
+		<english><![CDATA[most difficult]]></english>
+	</question>
+	<question>
+		<latin><i>justissime</i></latin>
+		<clue><![CDATA[<i>justus, -a, -um</i> just]]></clue>
+		<english><![CDATA[most justly]]></english>
+	</question>
+	<question>
+		<latin><i>quam longissimus</i></latin>
+		<clue><![CDATA[<i>longus, -a, -um</i> long]]></clue>
+		<english><![CDATA[as long as possible]]></english>
+	</question>
+	<question>
+		<latin><i>plenius</i></latin>
+		<clue><![CDATA[<i>plenus, -a, -um</i> full]]></clue>
+		<english><![CDATA[more fully]]></english>
+	</question>
+	<question>
+		<latin><i>perpetue</i></latin>
+		<clue><![CDATA[<i>perpetuus, -a, -um</i> perpetual]]></clue>
+		<english><![CDATA[perpetually]]></english>
+	</question>										
+</exercise>

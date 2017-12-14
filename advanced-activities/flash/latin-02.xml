@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<exercise id="02">
+	<question>
+		<latin><i>habueras</i></latin>
+		<clue><![CDATA[<i>habeo, habere, habui, habitum</i> (2) to have]]></clue>
+		<english><![CDATA[you had had (sing.)]]></english>
+	</question>
+	<question>
+		<latin><i>optinueram</i></latin>
+		<clue><![CDATA[<i>optineo, optinere, optinui, optentum</i> (2) to obtain]]></clue>
+		<english><![CDATA[I had obtained]]></english>
+	</question>
+	<question>
+		<latin><i>confirmaverat</i></latin>
+		<clue><![CDATA[<i>confirmo, confirmare, confirmavi, confirmatum</i> (1) to confirm]]></clue>
+		<english><![CDATA[he/she/it had confirmed]]></english>
+	</question>
+	<question>
+		<latin><i>nesciverant</i></latin>
+		<clue><![CDATA[<i>nescio, nescire, nescivi, nescitum</i> (4) not to know]]></clue>
+		<english><![CDATA[they had not known]]></english>
+	</question>
+	<question>
+		<latin><i>habueratis</i></latin>
+		<clue><![CDATA[<i>habeo, habere, habui, habitum</i> (2) to have]]></clue>
+		<english><![CDATA[you had had (pl.)]]></english>
+	</question>	
+	<question>
+		<latin><i>concesseram</i></latin>
+		<clue><![CDATA[<i>concedo, concedere, concessi, concessum</i> (3) to grant]]></clue>
+		<english><![CDATA[I had granted]]></english>
+	</question>
+	<question>
+		<latin><i>occupaverat</i></latin>
+		<clue><![CDATA[<i>occupo, occupare, occupavi, occupatum</i> (1) to occupy]]></clue>
+		<english><![CDATA[he/she/it had occupied]]></english>
+	</question>
+	<question>
+		<latin><i>remanseramus</i></latin>
+		<clue><![CDATA[<i>remaneo, remanere, remansi, remansum</i> (2) to remain]]></clue>
+		<english><![CDATA[we had remained]]></english>
+	</question>
+	<question>
+		<latin><i>dederamus</i></latin>
+		<clue><![CDATA[<i>do, dare, dedi, datum</i> (1) to give]]></clue>
+		<english><![CDATA[we had given]]></english>
+	</question>
+	<question>
+		<latin><i>audiveratis </i></latin>
+		<clue><![CDATA[<i>audio, audire, audivi, auditum</i> (4) to hear]]></clue>
+		<english><![CDATA[you had heard]]></english>
+	</question>										
+</exercise>
