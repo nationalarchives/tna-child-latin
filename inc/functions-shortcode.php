@@ -84,14 +84,10 @@ function latin_activity_shortcode( $atts ) {
 
 	if ( $a['advanced-activity'] ) {
 		$lesson = sprintf("%02d", $a['advanced-activity']);
-		return advanced_activity( $lesson );
+		return iframe_activity( '90%', '/advanced-activities/activity'.$lesson.'.html' );
 	}
 }
 add_shortcode( 'latin', 'latin_activity_shortcode' );
-
-function advanced_activity( $lesson ) {
-	return iframe_activity( '90%', '/advanced-activities/activity'.$lesson.'.html' );
-}
 
 function embed_code( $class, $id, $folder, $file ) {
 	$dir = get_stylesheet_directory_uri().'/'.$folder;
