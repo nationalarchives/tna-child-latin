@@ -8,7 +8,7 @@ Child theme for Latin tutorials
 
 ### Usage
 
-To display a beginners activity use the follow code example, the value represents the lesson number:
+To display a beginners activity use the following code example, the value represents the lesson number:
 
 `[latin beginner-activity="3"]`
 
