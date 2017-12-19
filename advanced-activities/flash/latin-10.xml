@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<exercise id="10">
+	<question>
+		<latin><i>sequitur</i></latin>
+		<clue><![CDATA[<i>sequor, sequi, secutus sum</i> (3) to follow]]></clue>
+		<english><![CDATA[he/she/it follows <font color="#CC0000">or</font> he/she/it is following ]]></english>
+	</question>
+	<question>
+		<latin><i>fido</i></latin>
+		<clue><![CDATA[<i>fido, fidere, fisus sum</i> (3) to trust]]></clue>
+		<english><![CDATA[I trust]]></english>
+	</question>
+	<question>
+		<latin><i>conabantur</i></latin>
+		<clue><![CDATA[<i>conor, conari, conatus sum</i> (1) to try]]></clue>
+		<english><![CDATA[they were trying <font color="#CC0000">or</font> they used to try]]></english>
+	</question>
+	<question>
+		<latin><i>morietur</i></latin>
+		<clue><![CDATA[<i>morior, mori, mortuus sum</i> (3) to die]]></clue>
+		<english><![CDATA[he/she/it will die]]></english>
+	</question>
+	<question>
+		<latin><i>gavisi erimus</i></latin>
+		<clue><![CDATA[<i>gaudeo, gaudere, gavisus sum</i> (2) to enjoy]]></clue>
+		<english><![CDATA[we shall have enjoyed]]></english>
+	</question>	
+	<question>
+		<latin><i>ingrediebatur</i></latin>
+		<clue><![CDATA[<i>ingredior, ingredi, ingressus sum</i> (3) to enter]]></clue>
+		<english><![CDATA[he/she/it was entering <font color="#CC0000">or</font> he/she/it used to enter]]></english>
+	</question>
+	<question>
+		<latin><i>solitus es</i></latin>
+		<clue><![CDATA[<i>soleo, solere, solitus sum</i> (2) to be accustomed]]></clue>
+		<english><![CDATA[you were accustomed <font color="#CC0000">or</font> you have been accustomed]]></english>
+	</question>
+	<question>
+		<latin><i>loquimur</i></latin>
+		<clue><![CDATA[<i>loquor, loqui, locutus sum</i> (3) to speak]]></clue>
+		<english><![CDATA[we speak <font color="#CC0000">or</font> we are speaking]]></english>
+	</question>
+	<question>
+		<latin><i>orsus sum</i></latin>
+		<clue><![CDATA[<i>ordior, ordiri, orsus sum</i> (4) to begin]]></clue>
+		<english><![CDATA[I began]]></english>
+	</question>
+	<question>
+		<latin><i>questi sunt</i></latin>
+		<clue><![CDATA[<i>queror, queri, questus sum</i> (3) to complain]]></clue>
+		<english><![CDATA[they complained <font color="#CC0000">or</font> they have complained]]></english>
+	</question>										
+</exercise>
