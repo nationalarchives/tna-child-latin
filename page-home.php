@@ -17,14 +17,6 @@ get_header(); ?>
 				endwhile;
 				?>
 			</main>
-			<?php
-			$sidebar = get_post_meta( $post->ID, 'sidebar', true );
-			if ( $sidebar == 'false' ) {
-				// do nothing
-			} else {
-				get_sidebar( $sidebar );
-			}
-			?>
 		</div>
 	</div>
 </div>
