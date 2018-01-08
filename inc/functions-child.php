@@ -36,7 +36,7 @@ function get_lessons( $boxes ) {
 					<?php } ?>
 					<p><?php echo $box['excerpt']; ?></p>
 					<?php if ( isset($box['child_pages']) ) { ?>
-						<ul class="child">
+						<ul >
 							<?php foreach ( $box['child_pages'] as $child_page ) { ?>
 								<li>
 									<a href="<?php echo $child_page['url']; ?>" title="<?php echo $child_page['title'] ?>">
