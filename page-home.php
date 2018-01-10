@@ -19,6 +19,7 @@ get_header(); ?>
 				?>
             </div>
         </div>
+        <main role="main">
         <div class="row">
             <div class="col-md-12">
                 <article>
@@ -78,33 +79,7 @@ get_header(); ?>
 			get_lessons( $boxes );
 			?>
         </div>
-        <!--<div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-6">
-                <article>
-                    <div class="entry-header">
-                        <h2 id="stage-1">
-                            Stage 1
-                        </h2>
-                    </div>
-                    <div class="entry-content clearfix">
-                        Stage 1 Bullets
-                    </div>
-                </article>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-6">
-                <article>
-                    <div class="entry-header">
-                        <h2 id="stage-2">
-                            Stage 2
-                        </h2>
-                    </div>
-                    <div class="entry-content clearfix">
-                        Stage 2 bullets
-                    </div>
-                </article>
-            </div>
-
-        </div>-->
+        </main>
 	</div>
 </div>
 
