@@ -14,7 +14,7 @@ function setThemeGlobals($environment = null) {
     global $pre_crumbs;
 
     switch ($environment) {
-        case 'local':
+        case 'internal':
         case 'development':
             $pre_path = '';
             $pre_crumbs = array('Latin' => '/');
