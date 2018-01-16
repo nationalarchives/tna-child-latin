@@ -7,25 +7,79 @@ get_header(); ?>
 
 <?php get_template_part( 'breadcrumb' ); ?>
 
-<div id="primary" class="content-area latin-home">
+<div id="primary" class="content-area latin-home level-one">
 	<div class="container">
-		<div class="row">
-			<main id="main" class="col-xs-12 col-sm-8" role="main">
+        <div class="row" role="banner">
+            <div class="col-md-12">
 				<?php
-				while ( have_posts() ) : the_post();
-					get_template_part( 'content' );
-				endwhile;
+				global $post;
+				$image      = make_path_relative_no_pre_path( get_feature_image_url( $post->ID, 'full-page-width', true ) );
+				$title      = get_the_title();
+				get_page_banner( 'level one', $title, $image, '', '', '' );
 				?>
-			</main>
+            </div>
+        </div>
+        <main role="main">
+        <div class="row">
+            <div class="col-md-12">
+                <article>
+                    <div class="entry-header">
+                        <h2><?php
+	                        echo get_post_meta($post -> ID, 'latin_h2', true);
+	                        ?></h2>
+                    </div>
+                    <div class="row entry-content">
+                        <div class="col-xs-12 col-sm-8 col-md-8">
+                            <?php
+                            while ( have_posts() ) : the_post();
+	                           the_content();
+
+                            endwhile;
+                            ?>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="row equal-heights" id="equal-heights">
 			<?php
-			$sidebar = get_post_meta( $post->ID, 'sidebar', true );
-			if ( $sidebar == 'false' ) {
-				// do nothing
-			} else {
-				get_sidebar( $sidebar );
+			$i     = 1;
+			$n     = 1;
+			$boxes = array();
+			$id    = is_front_page() ? 0 : $post->ID;
+			$pages = get_pages( array(
+				'sort_order'  => 'asc',
+				'sort_column' => 'menu_order',
+				'exclude'     => array( $post->ID ),
+				'child_of'    => $id,
+				'parent'      => $id,
+			) );
+			foreach ( $pages as $page ) {
+				$redirect               = get_post_meta( $page->ID, 'redirectUrl', true );
+				$boxes[ $i ]['title']   = $page->post_title;
+				$boxes[ $i ]['url']     = ( $redirect ) ? $redirect : make_path_relative( get_page_link( $page->ID ) );
+				$boxes[ $i ]['image']   = make_path_relative_no_pre_path( get_feature_image_url( $page->ID, 'landing-page-children-thumb' ) );
+				$boxes[ $i ]['excerpt'] = ( $page->post_excerpt ) ? $page->post_excerpt : first_sentence( $page->post_content );
+				$child_pages            = get_pages( array(
+					'sort_order'  => 'asc',
+					'sort_column' => 'menu_order',
+					'child_of'    => $page->ID,
+					'parent'      => $page->ID
+				) );
+				if ( $child_pages ) {
+					foreach ( $child_pages as $child_page ) {
+						$redirect                                  = get_post_meta( $child_page->ID, 'redirectUrl', true );
+						$boxes[ $i ]['child_pages'][ $n ]['title'] = $child_page->post_title;
+						$boxes[ $i ]['child_pages'][ $n ]['url']   = ( $redirect ) ? $redirect : make_path_relative( get_page_link( $child_page->ID ) );
+						$n ++;
+					}
+				}
+				$i ++;
 			}
+			get_lessons( $boxes );
 			?>
-		</div>
+        </div>
+        </main>
 	</div>
 </div>
 
