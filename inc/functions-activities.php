@@ -160,7 +160,8 @@ function advanced_activity( $name, $form_data ) {
 		}
 	}
 
-	$html = '<form action=""  id="'.$id_name.'" method="POST" class="activity-form"><fieldset><legend>'.$name.'</legend>';
+	$html = '<form action=""  id="'.$id_name.'" method="POST" class="activity-form">';
+	$html .= '<fieldset><legend>'.$name.'</legend>';
 
 	foreach ( $form_data as $data ) {
 
