@@ -3,7 +3,7 @@
  * Advanced activity 05
  */
 
-function form_element( $id, $title, $hint, $option_1, $option_2, $option_3) {
+function form_element( $id, $title, $hint, $option_1, $option_2, $option_3, $answer) {
 
 	$html = '<div class="form-row">
 				<p>'.$title.'</p>
@@ -20,6 +20,7 @@ function form_element( $id, $title, $hint, $option_1, $option_2, $option_3) {
 					<input type="radio" id="'.$id.$option_3.'" name="radio" value="'.$option_3.'">
 					<label for="'.$id.$option_3.'">'.$option_3.'</label>
 				</div>
+				<input type="hidden" name="answer" value="'.$answer.'">
 			</div>';
 
 	return $html;
@@ -35,6 +36,7 @@ function activity_05() {
 			'option 1'  => 'hoc',
 			'option 2'  => 'hac',
 			'option 3'  => 'illo',
+			'answer'    => 'hac'
 		),
 		array(
 			'id'        => 2,
@@ -43,6 +45,7 @@ function activity_05() {
 			'option 1'  => 'hic',
 			'option 2'  => 'hec',
 			'option 3'  => 'hoc',
+			'answer'    => 'hec'
 		),
 		array(
 			'id'        => 3,
@@ -51,6 +54,7 @@ function activity_05() {
 			'option 1'  => 'iisdem',
 			'option 2'  => 'iidem',
 			'option 3'  => 'eadem',
+			'answer'    => 'iidem'
 		),
 		array(
 			'id'        => 4,
@@ -59,6 +63,7 @@ function activity_05() {
 			'option 1'  => 'ullum',
 			'option 2'  => 'nullus',
 			'option 3'  => 'nullum',
+			'answer'    => 'nullum'
 		),
 		array(
 			'id'        => 5,
@@ -67,6 +72,7 @@ function activity_05() {
 			'option 1'  => 'nullam',
 			'option 2'  => 'ullum',
 			'option 3'  => 'ullam',
+			'answer'    => 'ullam'
 		),
 		array(
 			'id'        => 6,
@@ -75,6 +81,7 @@ function activity_05() {
 			'option 1'  => 'aliis',
 			'option 2'  => 'alius',
 			'option 3'  => 'alios',
+			'answer'    => 'aliis'
 		),
 		array(
 			'id'        => 7,
@@ -83,6 +90,7 @@ function activity_05() {
 			'option 1'  => 'eius',
 			'option 2'  => 'suis',
 			'option 3'  => 'suo',
+			'answer'    => 'suis'
 		),
 		array(
 			'id'        => 8,
@@ -91,6 +99,7 @@ function activity_05() {
 			'option 1'  => 'vobis',
 			'option 2'  => 'nobis',
 			'option 3'  => 'nos',
+			'answer'    => 'nobis'
 		),
 		array(
 			'id'        => 9,
@@ -99,6 +108,7 @@ function activity_05() {
 			'option 1'  => 'mihi',
 			'option 2'  => 'mei',
 			'option 3'  => 'me',
+			'answer'    => 'mihi'
 		),
 		array(
 			'id'        => 10,
@@ -107,6 +117,7 @@ function activity_05() {
 			'option 1'  => 'nostra',
 			'option 2'  => 'vestra',
 			'option 3'  => 'noster',
+			'answer'    => 'nostra'
 		)
 	);
 
@@ -128,8 +139,9 @@ function advanced_activity( $name, $form_data ) {
 		$option_1   = $data['option 1'];
 		$option_2   = $data['option 2'];
 		$option_3   = $data['option 3'];
+		$answer     = $data['answer'];
 
-		$html .= form_element( $id, $title, $hint, $option_1, $option_2, $option_3);
+		$html .= form_element( $id, $title, $hint, $option_1, $option_2, $option_3, $answer);
 	}
 
 	$html .= '<div class="form-row"><input type="submit" name="submit-'.$id_name.'" id="submit-'.$id_name.'" value="Check answers"></div></fieldset></form>';
