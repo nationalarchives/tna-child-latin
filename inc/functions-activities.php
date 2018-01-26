@@ -3,7 +3,7 @@
  * Advanced activity 05
  */
 
-function form_element( $id, $title, $hint, $option_1, $option_2, $option_3, $answer, $reply) {
+function form_element( $id, $title, $hint, $option_1, $option_2, $option_3, $answer, $reply ) {
 
 	if ( $reply ) {
 
@@ -39,7 +39,6 @@ function form_element( $id, $title, $hint, $option_1, $option_2, $option_3, $ans
 					<input type="radio" id="'.$id.$option_3.'" name="'.$id.'" value="'.$option_3.'">
 					<label for="'.$id.$option_3.'">'.$option_3.'</label>
 				</div>
-				<input type="hidden" name="answer-'.$id.'" value="'.$answer.'">
 			</div>';
 	}
 
@@ -179,7 +178,7 @@ function advanced_activity( $name, $form_data ) {
 	$html .= '<div class="form-row">';
 
 	if ( $reply ) {
-		$html .= '<a href="'.the_permalink().'" class="button" role="button">Try again</a>';
+		$html .= '<a href="'.get_permalink().'" class="button" role="button">Try again</a>';
 	} else {
 		$html .= '<input type="submit" name="submit-'.$id_name.'" id="submit-'.$id_name.'" value="Check answers">';
 	}
