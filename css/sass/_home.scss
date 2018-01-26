@@ -45,6 +45,9 @@
   .correct {
     background-color: #F5FAFA;
     border-left: 4px solid #008484;
+    .answer {
+      font-weight: 700;
+    }
     .reply {
       font-weight: 700;
       color: #008484;
@@ -53,6 +56,9 @@
   .wrong {
     background-color: #fdf2f2;
     border-left: 4px solid #CB0D07;
+    .answer {
+      font-weight: 700;
+    }
     .reply {
       font-weight: 700;
       color: #CB0D07;

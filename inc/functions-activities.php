@@ -17,9 +17,9 @@ function form_element( $id, $title, $hint, $option_1, $option_2, $option_3, $ans
 					<p>'.$title.'</p>
 					<p class="form-hint">'.$hint.'</p>
 					<div class="emphasis-block '.$class.'">
-						<p>The answer is:</p>
+						<p>The answer is</p>
 						<p class="answer">'.$answer.'</p>
-						<p>You have selected:</p>
+						<p>You selected</p>
 						<p class="reply">'.$reply[$id].'</p>
 					</div>
 				</div>';
