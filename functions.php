@@ -5,6 +5,7 @@ include 'inc/functions-identify-environment.php';
 include 'inc/functions-child.php';
 include 'inc/functions-shortcode.php';
 include 'inc/functions-admin.php';
+include 'inc/functions-activities.php';
 
 // For Breadcrumbs and URLs
 $environment = identifyEnvironmentFromIP($_SERVER['SERVER_ADDR'], $_SERVER['REMOTE_ADDR']);

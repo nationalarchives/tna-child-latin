@@ -82,6 +82,10 @@ function latin_activity_shortcode( $atts ) {
 			break;
 	}
 
+	if ( $a['advanced-activity'] == '5' ) {
+		return advanced_activity( 'Pronouns', activity_05() );
+	}
+
 	if ( $a['advanced-activity'] ) {
 		$lesson = sprintf("%02d", $a['advanced-activity']);
 		return iframe_activity( '90%', '/advanced-activities/activity'.$lesson.'.html' );
