@@ -36,3 +36,11 @@
       left: 0;
       width: 100%;
       height: 100%; }
+
+.correct {
+  background-color: #D5EAEA !important;
+  border-left: 4px solid #008484 !important; }
+
+.wrong {
+  background-color: #fdf2f2 !important;
+  border-left: 4px solid #CB0D07 !important; }

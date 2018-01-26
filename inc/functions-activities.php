@@ -3,9 +3,28 @@
  * Advanced activity 05
  */
 
-function form_element( $id, $title, $hint, $option_1, $option_2, $option_3, $answer) {
+function form_element( $id, $title, $hint, $option_1, $option_2, $option_3, $answer, $reply) {
 
-	$html = '<div class="form-row">
+	if ( $reply ) {
+
+		if ( $reply[$id] == $answer ) {
+			$class = 'correct';
+		} else {
+			$class = 'wrong';
+		}
+
+		$html = '<div class="form-row">
+					<p>'.$title.'</p>
+					<p class="form-hint">'.$hint.'</p>
+					<div class="emphasis-block '.$class.'">
+						<p>The answer is:</p>
+						<p>'.$answer.'</p>
+						<p>You have selected:</p>
+						<p>'.$reply[$id].'</p>
+					</div>
+				</div>';
+	} else {
+		$html = '<div class="form-row">
 				<p>'.$title.'</p>
 				<p class="form-hint">'.$hint.'</p>
 				<div class="radio">
@@ -22,6 +41,7 @@ function form_element( $id, $title, $hint, $option_1, $option_2, $option_3, $ans
 				</div>
 				<input type="hidden" name="answer-'.$id.'" value="'.$answer.'">
 			</div>';
+	}
 
 	return $html;
 }
@@ -129,9 +149,16 @@ function advanced_activity( $name, $form_data ) {
 	$id_name = strtolower($name);
 	$id_name = str_replace(' ', '-', $id_name);
 
+	$reply = array();
+
 	if ( isset( $_POST['submit-'.$id_name] ) ) {
-		var_dump($_POST);
-		return '';
+		for ( $i=1 ; $i<=10 ; $i++ ) {
+			if ( isset( $_POST[$i] ) ) {
+				$reply[$i] = $_POST[$i];
+			} else {
+				$reply[$i] = '-';
+			}
+		}
 	}
 
 	$html = '<form action=""  id="'.$id_name.'" method="POST" ><fieldset><legend>'.$name.'</legend>';
@@ -146,10 +173,18 @@ function advanced_activity( $name, $form_data ) {
 		$option_3   = $data['option 3'];
 		$answer     = $data['answer'];
 
-		$html .= form_element( $id, $title, $hint, $option_1, $option_2, $option_3, $answer);
+		$html .= form_element( $id, $title, $hint, $option_1, $option_2, $option_3, $answer, $reply);
 	}
 
-	$html .= '<div class="form-row"><input type="submit" name="submit-'.$id_name.'" id="submit-'.$id_name.'" value="Check answers"></div></fieldset></form>';
+	$html .= '<div class="form-row">';
+
+	if ( $reply ) {
+		$html .= '<a href="'.the_permalink().'" class="button" role="button">Try again</a>';
+	} else {
+		$html .= '<input type="submit" name="submit-'.$id_name.'" id="submit-'.$id_name.'" value="Check answers">';
+	}
+
+	$html .= '</div></fieldset></form>';
 
 	return $html;
 }
