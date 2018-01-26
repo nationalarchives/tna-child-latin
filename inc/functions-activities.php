@@ -9,18 +9,18 @@ function form_element( $id, $title, $hint, $option_1, $option_2, $option_3, $ans
 				<p>'.$title.'</p>
 				<p class="form-hint">'.$hint.'</p>
 				<div class="radio">
-					<input type="radio" id="'.$id.$option_1.'" name="radio" value="'.$option_1.'">
+					<input type="radio" id="'.$id.$option_1.'" name="'.$id.'" value="'.$option_1.'">
 					<label for="'.$id.$option_1.'">'.$option_1.'</label>
 				</div>
 				<div class="radio">
-					<input type="radio" id="'.$id.$option_2.'" name="radio" value="'.$option_2.'">
+					<input type="radio" id="'.$id.$option_2.'" name="'.$id.'" value="'.$option_2.'">
 					<label for="'.$id.$option_2.'">'.$option_2.'</label>
 				</div>
 				<div class="radio">
-					<input type="radio" id="'.$id.$option_3.'" name="radio" value="'.$option_3.'">
+					<input type="radio" id="'.$id.$option_3.'" name="'.$id.'" value="'.$option_3.'">
 					<label for="'.$id.$option_3.'">'.$option_3.'</label>
 				</div>
-				<input type="hidden" name="answer" value="'.$answer.'">
+				<input type="hidden" name="answer-'.$id.'" value="'.$answer.'">
 			</div>';
 
 	return $html;
@@ -128,6 +128,11 @@ function advanced_activity( $name, $form_data ) {
 
 	$id_name = strtolower($name);
 	$id_name = str_replace(' ', '-', $id_name);
+
+	if ( isset( $_POST['submit-'.$id_name] ) ) {
+		var_dump($_POST);
+		return '';
+	}
 
 	$html = '<form action=""  id="'.$id_name.'" method="POST" ><fieldset><legend>'.$name.'</legend>';
 
