@@ -37,10 +37,17 @@
       width: 100%;
       height: 100%; }
 
-.correct {
-  background-color: #D5EAEA !important;
-  border-left: 4px solid #008484 !important; }
-
-.wrong {
-  background-color: #fdf2f2 !important;
-  border-left: 4px solid #CB0D07 !important; }
+.activity-form .correct {
+  background-color: #F5FAFA;
+  border-left: 4px solid #008484; }
+  .activity-form .correct .reply {
+    font-weight: 700;
+    color: #008484; }
+.activity-form .wrong {
+  background-color: #fdf2f2;
+  border-left: 4px solid #CB0D07; }
+  .activity-form .wrong .reply {
+    font-weight: 700;
+    color: #CB0D07; }
+.activity-form .form-hint span {
+  text-decoration: underline; }

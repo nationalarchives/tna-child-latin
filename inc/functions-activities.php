@@ -18,9 +18,9 @@ function form_element( $id, $title, $hint, $option_1, $option_2, $option_3, $ans
 					<p class="form-hint">'.$hint.'</p>
 					<div class="emphasis-block '.$class.'">
 						<p>The answer is:</p>
-						<p>'.$answer.'</p>
+						<p class="answer">'.$answer.'</p>
 						<p>You have selected:</p>
-						<p>'.$reply[$id].'</p>
+						<p class="reply">'.$reply[$id].'</p>
 					</div>
 				</div>';
 	} else {
@@ -51,7 +51,7 @@ function activity_05() {
 		array(
 			'id'        => 1,
 			'title'     => '[ _____ ] presenti carta',
-			'hint'      => 'English: by this present',
+			'hint'      => 'English: by <span>this</span> present',
 			'option 1'  => 'hoc',
 			'option 2'  => 'hac',
 			'option 3'  => 'illo',
@@ -60,7 +60,7 @@ function activity_05() {
 		array(
 			'id'        => 2,
 			'title'     => '[ _____ ] est finalis concordia',
-			'hint'      => 'English: this is the final concord',
+			'hint'      => 'English: <span>this</span> is the final concord',
 			'option 1'  => 'hic',
 			'option 2'  => 'hec',
 			'option 3'  => 'hoc',
@@ -69,7 +69,7 @@ function activity_05() {
 		array(
 			'id'        => 3,
 			'title'     => 'Et preterea [ _____ ] Robertus et Elizabetha dant',
-			'hint'      => 'English: and moreover the same Robert and Elizabeth give',
+			'hint'      => 'English: and moreover <span>the same</span> Robert and Elizabeth give',
 			'option 1'  => 'iisdem',
 			'option 2'  => 'iidem',
 			'option 3'  => 'eadem',
@@ -78,7 +78,7 @@ function activity_05() {
 		array(
 			'id'        => 4,
 			'title'     => '[ _____ ] jus habuerunt',
-			'hint'      => 'English: they had no right',
+			'hint'      => 'English: they had <span>no</span> right',
 			'option 1'  => 'ullum',
 			'option 2'  => 'nullus',
 			'option 3'  => 'nullum',
@@ -87,7 +87,7 @@ function activity_05() {
 		array(
 			'id'        => 5,
 			'title'     => '[ _____ ] terram non tenent',
-			'hint'      => 'English: they do not hold any land',
+			'hint'      => 'English: they do not hold <span>any</span> land',
 			'option 1'  => 'nullam',
 			'option 2'  => 'ullum',
 			'option 3'  => 'ullam',
@@ -96,7 +96,7 @@ function activity_05() {
 		array(
 			'id'        => 6,
 			'title'     => 'cum multus [ _____ ]',
-			'hint'      => 'English: with many others',
+			'hint'      => 'English: with many <span>others</span>',
 			'option 1'  => 'aliis',
 			'option 2'  => 'alius',
 			'option 3'  => 'alios',
@@ -105,7 +105,7 @@ function activity_05() {
 		array(
 			'id'        => 7,
 			'title'     => 'cum [ _____ ] pertinenciis',
-			'hint'      => 'English: with its own appurtenances',
+			'hint'      => 'English: with <span>its own</span> appurtenances',
 			'option 1'  => 'eius',
 			'option 2'  => 'suis',
 			'option 3'  => 'suo',
@@ -114,7 +114,7 @@ function activity_05() {
 		array(
 			'id'        => 8,
 			'title'     => 'tenere de [ _____ ] in capite',
-			'hint'      => 'English: to hold of us in chief',
+			'hint'      => 'English: to hold <span>of us</span> in chief',
 			'option 1'  => 'vobis',
 			'option 2'  => 'nobis',
 			'option 3'  => 'nos',
@@ -123,7 +123,7 @@ function activity_05() {
 		array(
 			'id'        => 9,
 			'title'     => 'reddendo annuatim [ _____ ]',
-			'hint'      => 'English: paying annually to me',
+			'hint'      => 'English: paying annually <span>to me</span>',
 			'option 1'  => 'mihi',
 			'option 2'  => 'mei',
 			'option 3'  => 'me',
@@ -132,7 +132,7 @@ function activity_05() {
 		array(
 			'id'        => 10,
 			'title'     => '[ _____ ] sigilla apposuimus',
-			'hint'      => 'English: we have affixed our seals',
+			'hint'      => 'English: we have affixed <span>our</span> seals',
 			'option 1'  => 'nostra',
 			'option 2'  => 'vestra',
 			'option 3'  => 'noster',
@@ -160,7 +160,7 @@ function advanced_activity( $name, $form_data ) {
 		}
 	}
 
-	$html = '<form action=""  id="'.$id_name.'" method="POST" ><fieldset><legend>'.$name.'</legend>';
+	$html = '<form action=""  id="'.$id_name.'" method="POST" class="activity-form"><fieldset><legend>'.$name.'</legend>';
 
 	foreach ( $form_data as $data ) {
 
