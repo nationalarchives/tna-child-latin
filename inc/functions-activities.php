@@ -149,6 +149,7 @@ function advanced_activity( $name, $form_data ) {
 	$id_name = str_replace(' ', '-', $id_name);
 
 	$reply = array();
+	$score = 0;
 
 	if ( isset( $_POST['submit-'.$id_name] ) ) {
 		for ( $i=1 ; $i<=10 ; $i++ ) {
@@ -173,12 +174,19 @@ function advanced_activity( $name, $form_data ) {
 		$option_3   = $data['option 3'];
 		$answer     = $data['answer'];
 
+		if ( $reply ) {
+			if ( $reply[$id] == $answer ) {
+				$score++;
+			}
+		}
+
 		$html .= form_element( $id, $title, $hint, $option_1, $option_2, $option_3, $answer, $reply);
 	}
 
 	$html .= '<div class="form-row">';
 
 	if ( $reply ) {
+		$html .= '<p>Your score is '.$score.' out of 10</p>';
 		$html .= '<a href="'.get_permalink().'" class="button" role="button">Try again</a>';
 	} else {
 		$html .= '<input type="submit" name="submit-'.$id_name.'" id="submit-'.$id_name.'" value="Check answers">';
