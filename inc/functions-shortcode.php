@@ -82,8 +82,13 @@ function latin_activity_shortcode( $atts ) {
 			break;
 	}
 
-	if ( $a['advanced-activity'] == '5' ) {
-		return advanced_activity( 'Pronouns', activity_05() );
+	switch ( $a['advanced-activity'] ) {
+		case '5':
+			return advanced_activity( 'Pronouns', activity_05() );
+			break;
+		case 'p1':
+			return advanced_practice( 1, 'Imperfect tense', practice_01() );
+			break;
 	}
 
 	if ( $a['advanced-activity'] ) {

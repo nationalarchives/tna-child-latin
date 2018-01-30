@@ -55,3 +55,6 @@
     color: #CB0D07; }
 .activity-form .form-hint span {
   text-decoration: underline; }
+
+.advanced-practice label {
+  font-size: 1.2em; }

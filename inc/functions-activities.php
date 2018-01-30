@@ -196,3 +196,104 @@ function advanced_activity( $name, $form_data ) {
 
 	return $html;
 }
+
+function practice_01() {
+
+	$form_data = array(
+		array(
+			'id'        => 1,
+			'latin'     => '... atque Laurentius Grosse ville de Sowthampton mercator fuit et erat dominus et proprietarius cuiusdam navicule vocate The Diana',
+			'reference' => 'HCA 24/68 document no 51',
+			'search'    => 'HCA 24/68',
+			'answer'    => '... and Lawrence Grosse of the town of Southampton, merchant, was and used to be the master and owner of a certain small boat called The Diana'
+		),
+		array(
+			'id'        => 2,
+			'latin'     => '... magna pars terre, quam multi tenentes tenebant ...',
+			'reference' => 'SC 9/18 membrane 18',
+			'search'    => 'SC 9/18',
+			'answer'    => '... a great part of the land, which many tenants were holding ...'
+		),
+		array(
+			'id'        => 3,
+			'latin'     => '... idem rex cum dictis duce et archiepiscopo Cantuariensi colloquium habebat ...',
+			'reference' => 'C 65/62 membrane 20',
+			'search'    => 'C 65/62',
+			'answer'    => '... the same king was having a conference with the said duke and archbishop of Canterbury ...'
+		),
+		array(
+			'id'        => 4,
+			'latin'     => '... de terris ... quas dictus Ricardus sicut precipuus heres Humfridi de Prato clamabat ...',
+			'reference' => 'C 53/113',
+			'search'    => 'C 53/113',
+			'answer'    => '... concerning lands ... which the said Richard was claiming as the main heir of Humphrey de Prato ...'
+		),
+		array(
+			'id'        => 5,
+			'latin'     => 'Et postea exigebat ab eis plures alias consuetudines',
+			'reference' => 'KB 26/125 membrane 3',
+			'search'    => 'KB 26/125',
+			'answer'    => 'And afterwards he was demanding several other customs from them'
+		)
+	);
+
+	return $form_data;
+}
+
+function advanced_practice( $n, $name, $form_data ) {
+
+	$id_name = 'practice-'.$n;
+
+	$reply = array();
+	$score = 0;
+
+	if ( isset( $_POST['submit-'.$id_name] ) ) {
+
+	}
+
+	$html = '<form action=""  id="'.$id_name.'" method="POST" class="activity-form advanced-practice">';
+	$html .= '<fieldset><legend>'.$name.'</legend>';
+
+	foreach ( $form_data as $data ) {
+
+		$id         = $data['id'];
+		$latin      = $data['latin'];
+		$reference  = $data['reference'];
+		$search     = $data['search'];
+		$answer     = $data['answer'];
+
+		$html .= practice_form_element( $id, $latin, $reference, $search, $answer, $reply );
+	}
+
+	$html .= '<div class="form-row">';
+
+	if ( $reply ) {
+		$html .= '<p>Your score is '.$score.' out of 10</p>';
+		$html .= '<a href="'.get_permalink().'" class="button" role="button">Try again</a>';
+	} else {
+		$html .= '<input type="submit" name="submit-'.$id_name.'" id="submit-'.$id_name.'" value="Check answers">';
+	}
+
+	$html .= '</div></fieldset></form>';
+
+	return $html;
+}
+
+function practice_form_element( $id, $latin, $reference, $search, $answer, $reply ) {
+
+	if ( $reply ) {
+
+		$html = $answer;
+
+	} else {
+		$html = '<div class="form-row">
+					<p>Sentence: '.$id.'</p>
+					<label for="sentence-'.$id.'"><em>"'.$latin.'"</em></label>
+					<p class="form-hint">Catalogue reference: <a href="'.$search.'" target="_blank">'.$reference.'</a></p>
+					<p>Type your translation in the text box below:</p>
+					<textarea id="sentence-'.$id.'" name="'.$id.'"></textarea>
+				</div>';
+	}
+
+	return $html;
+}
