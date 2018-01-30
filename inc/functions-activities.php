@@ -134,7 +134,7 @@ function advanced_practice( $n, $name, $form_data ) {
 	if ( $reply ) {
 		$html .= '<a href="'.get_permalink().'" class="button" role="button">Try again</a>';
 	} else {
-		$html .= '<input type="submit" name="submit-'.$id_name.'" id="submit-'.$id_name.'" value="Check answers">';
+		$html .= '<input type="submit" name="submit-'.$id_name.'" id="submit-'.$id_name.'" value="Check your translations">';
 	}
 
 	$html .= '</div></fieldset></form>';
@@ -163,7 +163,7 @@ function practice_form_element( $id, $latin, $reference, $search, $answer, $repl
 		$html = '<div class="form-row">
 					<p>Sentence: '.$id.'</p>
 					<label for="sentence-'.$id.'" class="latin"><em>"'.$latin.'"</em></label>
-					<p class="form-hint">Catalogue reference: <a href="'.$search.'" target="_blank">'.$reference.'</a></p>
+					<p class="form-hint">Catalogue reference: <a href="http://discovery.nationalarchives.gov.uk/results/r?_q='.$search.'" target="_blank">'.$reference.'</a></p>
 					<p>Type your translation in the text box below:</p>
 					<textarea id="sentence-'.$id.'" name="'.$id.'"></textarea>
 				</div>';

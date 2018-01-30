@@ -58,3 +58,5 @@
 
 .advanced-practice .latin {
   font-size: 1.2em; }
+.advanced-practice textarea {
+  max-width: 100%; }
