@@ -118,18 +118,23 @@ function advanced_practice( $n, $name, $form_data ) {
 			}
 			$score = $_POST['score'];
 			similar_text($reply, $form_data[$n]['answer'], $percent);
-			if ( $percent > 50 ) {
+			if ( $percent > 60 ) {
 				$score++;
+				$class = 'correct';
+			} else {
+				$class = '';
 			}
 		} else {
 			$reply = '';
 			$score = $_POST['score'];
 			$n     = $_POST['sentence'];
+			$class = '';
 		}
 	} else {
 		$reply = '';
 		$score = 0;
 		$n = 0;
+		$class = '';
 	}
 
 	$id         = $form_data[$n]['id'];
@@ -141,7 +146,7 @@ function advanced_practice( $n, $name, $form_data ) {
 	$html = '<form action=""  id="'.$id_name.'" method="POST" class="activity-form advanced-practice">';
 	$html .= '<fieldset><legend>'.$name.'</legend>';
 
-	$html .= practice_form_element( $id, $latin, $reference, $search, $answer, $reply, $score );
+	$html .= practice_form_element( $id, $latin, $reference, $search, $answer, $reply, $score, $class );
 
 
 	$html .= '<div class="form-row">';
@@ -162,20 +167,20 @@ function advanced_practice( $n, $name, $form_data ) {
 	return $html;
 }
 
-function practice_form_element( $id, $latin, $reference, $search, $answer, $reply, $score ) {
+function practice_form_element( $id, $latin, $reference, $search, $answer, $reply, $score, $class ) {
 
 	if ( $reply ) {
 
 		$html = '<div class="form-row">
 					<p>Sentence: '.$id.'</p>
 					<p for="sentence-'.$id.'" class="latin"><em>"'.$latin.'"</em></p>
-					<div class="emphasis-block">
+					<div class="emphasis-block '.$class.'">
 						<p>Your translation is</p>
-						<p class="reply">"<strong>'.$reply.'</strong>"</p>
+						<p class="reply">"'.$reply.'"</p>
 					</div>
-					<div class="emphasis-block">
+					<div class="emphasis-block correct">
 						<p>Correct translation is</p>
-						<p class="answer">"<strong>'.$answer.'</strong>"</p>
+						<p class="answer">"'.$answer.'"</p>
 					</div>
 					<input type="hidden" name="status" value="answer">
 					<input type="hidden" name="sentence" value="'.$id.'">
