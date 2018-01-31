@@ -574,43 +574,43 @@ function practice_11() {
 	return $form_data;
 }
 
-function practice_00() {
+function practice_12() {
 
 	$form_data = array(
 		array(
 			'id'        => 1,
-			'latin'     => '',
-			'reference' => '',
-			'search'    => '',
-			'answer'    => ''
+			'latin'     => 'Scilicet quod predicti Dorothea Ricardus et Maria et Petrus et Katerina recognoverunt predicta tenementa cum pertinenciis esse ius ipsius Willelmi ...',
+			'reference' => 'CP 25/2/389/11JASIHIL',
+			'search'    => 'CP 25/2/389/11JASIHIL',
+			'answer'    => 'Namely that the aforesaid Dorothy, Richard and Mary and Peter and Katherine acknowledged the aforesaid tenements with appurtenances to be the right of William, himself, ...'
 		),
 		array(
 			'id'        => 2,
-			'latin'     => '',
-			'reference' => '',
-			'search'    => '',
-			'answer'    => ''
+			'latin'     => 'Et instanter idem Adam petit iudicium et dampna sua sibi in hac parte adiudicari ...',
+			'reference' => 'KB 27/555',
+			'search'    => 'KB 27/555',
+			'answer'    => 'And the same Adam seeks instantly that judgement and his damages are adjudged to him in this regard ...'
 		),
 		array(
 			'id'        => 3,
-			'latin'     => '',
-			'reference' => '',
-			'search'    => '',
-			'answer'    => ''
+			'latin'     => 'Item quod anno et mensibus predictis ... dominus Thomas Sherlie senior miles dictam navim the St George et dictus Laurentius Grosse dictam naviculam appellatam the Diana ... prepararunt armarunt et instruxerunt vel sic preparari armari et instrui fecerunt',
+			'reference' => 'HCA 24/68 no. 51',
+			'search'    => 'HCA 24/68',
+			'answer'    => 'Likewise, that in the year and months aforesaid, lord Thomas Sherlie the elder, knight, prepared, armed and equipped or caused to be prepared, armed and equipped the said ship the St George and the said Lawrence Grosse the said small ship called the Diana'
 		),
 		array(
 			'id'        => 4,
-			'latin'     => '',
-			'reference' => '',
-			'search'    => '',
-			'answer'    => ''
+			'latin'     => 'Et si contingat dictos Willelmum Johannem Laurencium et Ricardum filios meos predictos seu eorum aliquem obire sive discedere antequam pervenerint ad etatem predictam tunc volo ...',
+			'reference' => 'PROB 11/7 (19 Logge)',
+			'search'    => 'PROB 11/7',
+			'answer'    => 'And if it happens that the said William, John, Lawrence and Richard, my aforesaid sons, or any of them die or decease before they will have reached the aforesaid age, then I will ... '
 		),
 		array(
 			'id'        => 5,
-			'latin'     => '',
-			'reference' => '',
-			'search'    => '',
-			'answer'    => ''
+			'latin'     => 'Henricus Conquest juratus presentat omnia esse bene quoad officium suum pertinet ...',
+			'reference' => 'SC 2/195/28',
+			'search'    => 'SC 2/195/28',
+			'answer'    => 'Henry Conquest, having been sworn, presents that all is well as far as pertains to his office ...'
 		)
 	);
 

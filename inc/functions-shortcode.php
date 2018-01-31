@@ -119,6 +119,9 @@ function latin_activity_shortcode( $atts ) {
 		case 'p11':
 			return advanced_practice( 11, 'Gerunds and Gerundives', practice_11() );
 			break;
+		case 'p12':
+			return advanced_practice( 12, 'Infinitives; accusative and infinitive clause', practice_12() );
+			break;
 	}
 
 	if ( $a['advanced-activity'] ) {
