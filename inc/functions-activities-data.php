@@ -187,6 +187,49 @@ function practice_02() {
 	return $form_data;
 }
 
+function practice_03() {
+
+	$form_data = array(
+		array(
+			'id'        => 1,
+			'latin'     => '... remanebit sive remanebunt et continuabit sive continuabunt in prisona ...',
+			'reference' => 'ASSI 35/25/7 no 38',
+			'search'    => 'ASSI 35/25/7',
+			'answer'    => '... he will remain or they will remain and he will continue or they will continue in prison ...'
+		),
+		array(
+			'id'        => 2,
+			'latin'     => 'Et eciam prefatus Thomas Powell et heredes sui predicta premissa ... warrantizabunt et imperpetuum per presentes defendent ... imperpetuum de cetero acquietabunt exonerabunt et indempnes conservabunt ...',
+			'reference' => 'C 54/2222',
+			'search'    => 'C 54/2222',
+			'answer'    => 'And also the aforesaid Thomas Powell and his heirs will warrant and will defend forever by these presents (i.e. documents) the aforesaid premises ... they will acquit, discharge and keep them immune from injury forever henceforth ...'
+		),
+		array(
+			'id'        => 3,
+			'latin'     => 'Et ego Ada et heredes mei tenebimus et warantizabimus hanc cartam presentem predicto Thome et heredibus suis in perpetuum ...',
+			'reference' => 'E 210/8782',
+			'search'    => 'E 210/8782',
+			'answer'    => 'And I, Adam, and my heirs will hold and warrant this present charter to the aforesaid Thomas and his heirs forever ...'
+		),
+		array(
+			'id'        => 4,
+			'latin'     => 'Ita quod nec nos Willelmus episcopus antedictus nec successores nostri aliquam calumpniam servitutis seu villenagii in prefatam Margaretam ... habere vel vendicare poterimus ...',
+			'reference' => 'E 42/284',
+			'search'    => 'E 42/284',
+			'answer'    => 'So that neither we, William, the aforesaid bishop, or our successors, will be able to have or claim any charge of servitude or villeinage towards the aforesaid Margaret ...'
+		),
+		array(
+			'id'        => 5,
+			'latin'     => 'Et Robertus presens fuit et concessit quod citra festum sancti Michaelis veniet apud Norwic\' et quod constabularius suus computabit cum eis ...',
+			'reference' => 'KB 26/125 membrane 4',
+			'search'    => 'KB 26/125',
+			'answer'    => 'And Robert was present and granted that before the festival of St Michael he will come to Norwich and that his constable will account with them ...'
+		)
+	);
+
+	return $form_data;
+}
+
 function practice_00() {
 
 	$form_data = array(
