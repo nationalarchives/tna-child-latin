@@ -110,6 +110,9 @@ function latin_activity_shortcode( $atts ) {
 		case 'p8':
 			return advanced_practice( 8, 'Comparison of adjectives and adverbs', practice_08() );
 			break;
+		case 'p9':
+			return advanced_practice( 9, 'Subjunctive', practice_09() );
+			break;
 	}
 
 	if ( $a['advanced-activity'] ) {

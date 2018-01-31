@@ -99,9 +99,9 @@ function advanced_activity( $name, $form_data ) {
 	return $html;
 }
 
-function advanced_practice( $n, $name, $form_data ) {
+function advanced_practice( $p, $name, $form_data ) {
 
-	$id_name = 'practice-'.$n;
+	$id_name = 'practice-'.$p;
 
 	if ( isset( $_POST['submit-'.$id_name] ) ) {
 		if ( $_POST['status'] == 'question' ) {

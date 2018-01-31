@@ -445,6 +445,49 @@ function practice_08() {
 	return $form_data;
 }
 
+function practice_09() {
+
+	$form_data = array(
+		array(
+			'id'        => 1,
+			'latin'     => 'Et ita quod idem Johannes Androwes bonam et sufficientem securitatem inveniat ...',
+			'reference' => 'C 66/1421 folio 25',
+			'search'    => 'C 66/1421',
+			'answer'    => 'And so that the same John Androwes may find good and sufficient security ...'
+		),
+		array(
+			'id'        => 2,
+			'latin'     => 'Nolentes quod predictus Jacobus vel heredes sui aut prefatus Nicholaus vel heredes sui ratione premissorum per nos heredes vel successores nostros aut per justiciarios escaetores vicecomites ballivos aut alios officiarios seu ministros nostros aut dictorum heredum vel successorum nostrorum quoscumque inde occasionentur molestentur impetantur vexentur in aliquo seu graventur nec eorum aliquis occasionetur molestetur impetatur vexetur in aliquo seu gravetur',
+			'reference' => 'C 66/1422 folio 33',
+			'search'    => 'C 66/1422',
+			'answer'    => 'Not wishing that the aforesaid James or his heirs or the aforesaid Nicholas or his heirs by reason of the foregoing may be accused, molested, impeached, troubled or in any thing harmed by us, our heirs or successors or by our justices, escheators, sheriffs, bailiffs or any other of our officials or ministers or those of our said heirs or successors whomsoever, nor any one of them may be accused, molested, impeached, troubled or in any thing oppressed'
+		),
+		array(
+			'id'        => 3,
+			'latin'     => 'Mandamus vobis quod ... diligenter inquiratis si sit ad dampnum vel preiudicium nostrum aut aliorum si concedamus Johanni de Shodeswell quod ipse unum mesuagium viginti et unam acras terre et quinque solidatas redditus cum pertinenciis in Estburn ... retinere possit',
+			'reference' => 'C 143/198/1',
+			'search'    => 'C 143/198/1',
+			'answer'    => 'We command you that ... you diligently inquire whether it might be to our damage or prejudice or to that of others, if we grant to John de Shodeswell that he, himself, can retain one messuage, 21 acres of land and five shillings\' worth of rent with appurtenances in Estburn ...'
+		),
+		array(
+			'id'        => 4,
+			'latin'     => '... volo quod omnia bona et denarie summe ipsius decedentis remaneant et distribuantur inter alios filios meos superviventes equaliter ...',
+			'reference' => 'PROB 11/7',
+			'search'    => 'PROB 11/7',
+			'answer'    => '... I will that all the goods and monetary sums of the deceased man, himself, may remain and be distributed among my other surviving sons equally ...'
+		),
+		array(
+			'id'        => 5,
+			'latin'     => 'Sciatis quod cum celebris memorie dominus Henricus quondam Rex Anglie avus noster per cartam suam concessisset Roberto de Rogate quod ipse et heredes sui imperpetuum haberent unam feriam apud manerium suum de Rogate',
+			'reference' => 'C 53/113',
+			'search'    => 'C 53/113',
+			'answer'    => 'Know you that since lord Henry of renowned memory, formerly king of England, our grandfather, by his charter had granted to Robert de Rogate that he, himself, and his heirs might have forever one fair at his manor of Rogate'
+		)
+	);
+
+	return $form_data;
+}
+
 function practice_00() {
 
 	$form_data = array(
