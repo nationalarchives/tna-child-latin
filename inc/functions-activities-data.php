@@ -488,6 +488,49 @@ function practice_09() {
 	return $form_data;
 }
 
+function practice_10() {
+
+	$form_data = array(
+		array(
+			'id'        => 1,
+			'latin'     => 'Et unde predictus Adam per Thomam Holme attornatum suum queritur quod ...',
+			'reference' => 'KB 27/555',
+			'search'    => 'KB 27/555',
+			'answer'    => 'And whereupon the aforesaid Adam by Thomas Holme, his attorney, complains that ...'
+		),
+		array(
+			'id'        => 2,
+			'latin'     => 'Hec indentura ... testatur quod ...',
+			'reference' => 'C 54/2222',
+			'search'    => 'C 54/2222',
+			'answer'    => 'This indenture ... witnesses that ...'
+		),
+		array(
+			'id'        => 3,
+			'latin'     => '... et ipsi et eorum predecessores dictis libertatibus hactenus rationabiliter usi sunt et gavisi ...',
+			'reference' => 'C 53/113',
+			'search'    => 'C 53/113',
+			'answer'    => '... and they, themselves, and their predecessors have used and enjoyed the said liberties up to now in due form ...'
+		),
+		array(
+			'id'        => 4,
+			'latin'     => 'Dicit eciam quod ... idem Hugo habuit breve domini regis cuidam Willelmo de Sancto Claro, tunc escaetori Regis, ... quod permitteret ipsum ingredi predicta tenementa ...',
+			'reference' => 'SC 9/6 membrane 1',
+			'search'    => 'SC 9/6',
+			'answer'    => 'He also says that ... the same Hugh had a writ of the lord king [addressed] to a certain William de St. Clair, then the king\'s escheator, that he should allow him to enter the aforesaid tenements ...'
+		),
+		array(
+			'id'        => 5,
+			'latin'     => 'Walterus Queyntered et Seman Fale pro creditoribus Roberti de Briwes de Norwic\' venerunt et conquesti sunt quod predictus Robertus debet eis xxxix libras de esculentis et poculentis ...',
+			'reference' => 'KB 26/125 membrane 4',
+			'search'    => 'KB 26/125',
+			'answer'    => 'Walter Queyntered and Seman Fale on behalf of the creditors of Robert de Briwes of Norwich came and complained that Robert owes to them 39 pounds of food and drink ...'
+		)
+	);
+
+	return $form_data;
+}
+
 function practice_00() {
 
 	$form_data = array(

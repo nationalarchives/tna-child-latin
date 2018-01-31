@@ -113,6 +113,9 @@ function latin_activity_shortcode( $atts ) {
 		case 'p9':
 			return advanced_practice( 9, 'Subjunctive', practice_09() );
 			break;
+		case 'p10':
+			return advanced_practice( 10, 'Deponent and semi-deponent verbs', practice_10() );
+			break;
 	}
 
 	if ( $a['advanced-activity'] ) {
