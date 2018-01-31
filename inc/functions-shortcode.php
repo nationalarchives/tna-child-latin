@@ -95,6 +95,9 @@ function latin_activity_shortcode( $atts ) {
 		case 'p3':
 			return advanced_practice( 3, 'Future simple', practice_03() );
 			break;
+		case 'p4':
+			return advanced_practice( 4, 'Future perfect tense', practice_04() );
+			break;
 	}
 
 	if ( $a['advanced-activity'] ) {

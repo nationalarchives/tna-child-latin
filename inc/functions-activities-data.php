@@ -230,6 +230,49 @@ function practice_03() {
 	return $form_data;
 }
 
+function practice_04() {
+
+	$form_data = array(
+		array(
+			'id'        => 1,
+			'latin'     => 'Omnibus ad quos presens scriptum pervenerit Robertus de Coudrey salutem.',
+			'reference' => 'DL 25/2369',
+			'search'    => 'DL 25/2369',
+			'answer'    => 'To all to whom the present writing will have come, Robert de Coudrey [sends] greetings.'
+		),
+		array(
+			'id'        => 2,
+			'latin'     => '... obligo me et heredes meos et omnem terram quam de predicto comite teneo ad quoscumque manus predicta terra devenerit \'cohercioni et districcioni\'* predicti comitis et heredum suorum donec eis de predictis duabus marcis annui redditus plenarie fuerit satisfactum ... (* This is an unusual use of the dative, which should be translated: \'as a result of\'.)',
+			'reference' => 'DL 25/2369',
+			'search'    => 'DL 25/2369',
+			'answer'    => '... I bind myself and my heirs and all the land, which I hold of the aforesaid earl, to whosesoever hands the aforesaid land will have gone to, as a result of coercion and distraint of the aforesaid earl and his heirs, until satisfaction will have been made to them fully concerning the aforesaid two marks of annual rent ...'
+		),
+		array(
+			'id'        => 3,
+			'latin'     => 'Et quoad legaciones predictas factas prefatis Willelmo Johanni Laurencio et Ricardo filiis meis supranominatis volo quod omnes denarii ... cum omnimodis proficuis et exitibus provenientibus de terris et tenementis superius recitatis remaneant in custodia et manibus executricis mee quousque predicti filii mei pervenerint ad etatem xx<sup>ti</sup> annorum',
+			'reference' => 'PROB 11/7 (19 Logge)',
+			'search'    => 'PROB 11/7',
+			'answer'    => 'And as regards the aforesaid legacies made to the aforesaid William, John, Lawrence and Richard, my above-named sons, I will that all the money with profits and issues of every kind coming forth from the lands and tenements recited above, remain in the custody and hands of my executrix until my aforesaid sons will have come to the age of 20 years'
+		),
+		array(
+			'id'        => 4,
+			'latin'     => 'Et si eadem Margareta obierit antequam ad legitimam etatem dicte Margarete filie sue pervenerit extunc lego ...',
+			'reference' => 'PROB 11/1 (8 Rous)',
+			'search'    => 'PROB 11/1',
+			'answer'    => 'And if the same Margaret dies [literally \'will have died\'] before she will have reached the lawful age of the said Margaret my daughter, then I bequeath ...'
+		),
+		array(
+			'id'        => 5,
+			'latin'     => 'Item quod si ... dictus Anthonius Marshe consignaverit predictam quantitatem cere ... consignacio sic facta ... fuerit fraudulenta.',
+			'reference' => 'HCA 24/68 number 24',
+			'search'    => 'HCA 24/68',
+			'answer'    => 'Likewise, that if the said Anthony Marshe consigned [literally \'will have consigned\'] the aforesaid quantity of wax, the consignment thus made will have been fraudulent.'
+		)
+	);
+
+	return $form_data;
+}
+
 function practice_00() {
 
 	$form_data = array(
