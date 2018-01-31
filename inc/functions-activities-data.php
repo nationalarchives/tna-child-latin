@@ -143,3 +143,89 @@ function practice_01() {
 
 	return $form_data;
 }
+
+function practice_02() {
+
+	$form_data = array(
+		array(
+			'id'        => 1,
+			'latin'     => '... iidem communes ... gratanter se habuerant ...',
+			'reference' => 'C 65/110 membrane 4',
+			'search'    => 'C 65/110',
+			'answer'    => '... the same commons ... had cheerfully occupied themselves ... (lit: held themselves)'
+		),
+		array(
+			'id'        => 2,
+			'latin'     => '... prefatus dominus cancellarius, de mandato eiusdem domini regis, ulterius declaravit, qualiter idem dominus rex, ex ipsorum communium relatione conceperat, quod in civitate London\', et suburbiis eiusdem, gravis pestilentia ceperat iam oriri ...',
+			'reference' => 'C 65/92 membrane 17',
+			'search'    => 'C 65/92',
+			'answer'    => '... the aforesaid lord chancellor, at the command of the same lord king, further declared how the same lord king had understood from the report of the same commons that a great pestilence had now begun to appear in the city of London and its suburbs ...'
+		),
+		array(
+			'id'        => 3,
+			'latin'     => 'Et quia predicti clerici sui capti fuerunt et inprisonati per ministros ipsius episcopi, quos miserat ...',
+			'reference' => 'SC 9/6 membrane 5, dorse',
+			'search'    => 'SC 9/6',
+			'answer'    => 'And because his aforesaid clerks were arrested and imprisoned by the officials, whom he had sent, of the same bishop ...'
+		),
+		array(
+			'id'        => 4,
+			'latin'     => 'Et quod predictos exitus pro nulla alia causa retinuit per tantum tempus, nisi pro eo quod non portaverat ei breve de sufficienti warranto ..',
+			'reference' => 'SC 9/3 membrane 3',
+			'search'    => 'SC 9/3',
+			'answer'    => 'And that he did not keep the aforesaid issues for such time for any other reason, except for this that he had not brought to him a writ providing sufficient warranty ...'
+		),
+		array(
+			'id'        => 5,
+			'latin'     => '... pixidem aperuerunt et sigilla fregerunt et litteras legerunt, et per hoc concordati fuerunt ubi inimici prius fuerant ...',
+			'reference' => 'SC 9/3 membrane 4',
+			'search'    => 'SC 9/3',
+			'answer'    => '... they opened the box and broke the seals and read the letters, and by this they were reconciled where they had previously been enemies ...'
+		)
+	);
+
+	return $form_data;
+}
+
+function practice_00() {
+
+	$form_data = array(
+		array(
+			'id'        => 1,
+			'latin'     => '',
+			'reference' => '',
+			'search'    => '',
+			'answer'    => ''
+		),
+		array(
+			'id'        => 2,
+			'latin'     => '',
+			'reference' => '',
+			'search'    => '',
+			'answer'    => ''
+		),
+		array(
+			'id'        => 3,
+			'latin'     => '',
+			'reference' => '',
+			'search'    => '',
+			'answer'    => ''
+		),
+		array(
+			'id'        => 4,
+			'latin'     => '',
+			'reference' => '',
+			'search'    => '',
+			'answer'    => ''
+		),
+		array(
+			'id'        => 5,
+			'latin'     => '',
+			'reference' => '',
+			'search'    => '',
+			'answer'    => ''
+		)
+	);
+
+	return $form_data;
+}

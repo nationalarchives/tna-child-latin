@@ -89,6 +89,9 @@ function latin_activity_shortcode( $atts ) {
 		case 'p1':
 			return advanced_practice( 1, 'Imperfect tense', practice_01() );
 			break;
+		case 'p2':
+			return advanced_practice( 2, 'Pluperfect tense', practice_02() );
+			break;
 	}
 
 	if ( $a['advanced-activity'] ) {
