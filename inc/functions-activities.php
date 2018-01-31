@@ -103,38 +103,56 @@ function advanced_practice( $n, $name, $form_data ) {
 
 	$id_name = 'practice-'.$n;
 
-	$reply = array();
-
 	if ( isset( $_POST['submit-'.$id_name] ) ) {
-		for ( $i=1 ; $i<=5 ; $i++ ) {
-			if ( isset( $_POST[$i] ) ) {
-				$reply[$i] = $_POST[$i];
+		if ( $_POST['status'] == 'question' ) {
+			$id  = $_POST['sentence'];
+			$n   = $id-1;
+			if ( isset( $_POST[$id] ) ) {
+				if ( $_POST[$id] == '' ) {
+					$reply = '-';
+				} else {
+					$reply = $_POST[$id];
+				}
 			} else {
-				$reply[$i] = '-';
+				$reply = '-';
 			}
+			$score = $_POST['score'];
+			if ( $reply == $form_data[$n]['answer'] ) {
+				$score++;
+			}
+		} else {
+			$reply = '';
+			$score = $_POST['score'];
+			$n     = $_POST['sentence'];
 		}
+	} else {
+		$reply = '';
+		$score = 0;
+		$n = 0;
 	}
+
+	$id         = $form_data[$n]['id'];
+	$latin      = $form_data[$n]['latin'];
+	$reference  = $form_data[$n]['reference'];
+	$search     = $form_data[$n]['search'];
+	$answer     = $form_data[$n]['answer'];
 
 	$html = '<form action=""  id="'.$id_name.'" method="POST" class="activity-form advanced-practice">';
 	$html .= '<fieldset><legend>'.$name.'</legend>';
 
-	foreach ( $form_data as $data ) {
+	$html .= practice_form_element( $id, $latin, $reference, $search, $answer, $reply, $score );
 
-		$id         = $data['id'];
-		$latin      = $data['latin'];
-		$reference  = $data['reference'];
-		$search     = $data['search'];
-		$answer     = $data['answer'];
-
-		$html .= practice_form_element( $id, $latin, $reference, $search, $answer, $reply );
-	}
 
 	$html .= '<div class="form-row">';
 
 	if ( $reply ) {
-		$html .= '<a href="'.get_permalink().'" class="button" role="button">Try again</a>';
+		if ( $id == 5 ) {
+			$html .= '<a href="'.get_permalink().'" class="button" role="button">Try again</a>';
+		} else {
+			$html .= '<input type="submit" name="submit-'.$id_name.'" id="submit-'.$id_name.'" value="Next sentence">';
+		}
 	} else {
-		$html .= '<input type="submit" name="submit-'.$id_name.'" id="submit-'.$id_name.'" value="Check your translations">';
+		$html .= '<input type="submit" name="submit-'.$id_name.'" id="submit-'.$id_name.'" value="Check your translation">';
 	}
 
 	$html .= '</div></fieldset></form>';
@@ -142,7 +160,7 @@ function advanced_practice( $n, $name, $form_data ) {
 	return $html;
 }
 
-function practice_form_element( $id, $latin, $reference, $search, $answer, $reply ) {
+function practice_form_element( $id, $latin, $reference, $search, $answer, $reply, $score ) {
 
 	if ( $reply ) {
 
@@ -151,12 +169,15 @@ function practice_form_element( $id, $latin, $reference, $search, $answer, $repl
 					<p for="sentence-'.$id.'" class="latin"><em>"'.$latin.'"</em></p>
 					<div class="emphasis-block">
 						<p>Your translation is</p>
-						<p class="reply">"'.$reply[$id].'"</p>
+						<p class="reply">"'.$reply.'"</p>
 					</div>
 					<div class="emphasis-block">
 						<p>Correct translation is</p>
 						<p class="answer">"'.$answer.'"</p>
 					</div>
+					<input type="hidden" name="status" value="answer">
+					<input type="hidden" name="sentence" value="'.$id.'">
+					<input type="hidden" name="score" value="'.$score.'">
 				</div>';
 
 	} else {
@@ -166,6 +187,9 @@ function practice_form_element( $id, $latin, $reference, $search, $answer, $repl
 					<p class="form-hint">Catalogue reference: <a href="http://discovery.nationalarchives.gov.uk/results/r?_q='.$search.'" target="_blank">'.$reference.'</a></p>
 					<p>Type your translation in the text box below:</p>
 					<textarea id="sentence-'.$id.'" name="'.$id.'"></textarea>
+					<input type="hidden" name="status" value="question">
+					<input type="hidden" name="sentence" value="'.$id.'">
+					<input type="hidden" name="score" value="'.$score.'">
 				</div>';
 	}
 
