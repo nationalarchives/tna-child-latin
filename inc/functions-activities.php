@@ -153,7 +153,7 @@ function advanced_practice( $n, $name, $form_data ) {
 
 	if ( $reply ) {
 		if ( $id == 5 ) {
-			$html .= '<p>Your score is '.$score.' out of 5</p>';
+			$html .= '<div class="emphasis-block"><p>Results</p><p><strong>Your score is '.$score.' out of 5</strong></p></div>';
 			$html .= '<a href="'.get_permalink().'" class="button" role="button">Try again</a>';
 		} else {
 			$html .= '<input type="submit" name="submit-'.$id_name.'" id="submit-'.$id_name.'" value="Next sentence">';

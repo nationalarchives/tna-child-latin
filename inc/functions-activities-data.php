@@ -273,6 +273,49 @@ function practice_04() {
 	return $form_data;
 }
 
+function practice_05() {
+
+	$form_data = array(
+		array(
+			'id'        => 1,
+			'latin'     => '... tradunt concedunt vendunt barganizant et confirmant prefatis Willelmo Price heredibus et assignatis suis imperpetuum totum illum magnum messuagium sive tenementum ac totum illum gardinum eidem adiacentem ...',
+			'reference' => 'C 54/2222',
+			'search'    => 'C 54/2222',
+			'answer'    => 'They hand over, grant, sell, bargain and confirm to the aforesaid William Price, his heirs and assigns forever all that great messuage or tenement and all that garden adjacent to the same ...'
+		),
+		array(
+			'id'        => 2,
+			'latin'     => 'Et ulterius juratores predicti dicunt super sacramentum suum predictum quod predictus Johannes Collyns defunctus tempore mortis sue nulla alia sive plura messuagia terras tenementa seu hereditamenta habuit sive tenuit ...',
+			'reference' => 'C 142/773/169',
+			'search'    => 'C 142/773/169',
+			'answer'    => 'And furthermore the aforesaid jurors say upon their aforesaid oath that the aforesaid John Collyns, deceased, at the time of his death had or held no other or more messuages, lands, tenements or hereditaments ...'
+		),
+		array(
+			'id'        => 3,
+			'latin'     => 'Et pro hac recognicione remissione quietaclamacione warantia fine et concordia iidem Willelmus et Rogerus dederunt predictis Dorothee Ricardo et Marie et Petro et Katerine sexaginta libras sterlingorum.',
+			'reference' => 'CP 25/2/389/11JasIHil',
+			'search'    => 'CP 25/2/389/11JasIHil',
+			'answer'    => 'And for this acknowledgment, remission, quitclaim, warranty, fine and agreement the same William and Roger have given to the aforesaid Dorothy, Richard and Mary and Peter and Katherine sixty pounds of sterling.'
+		),
+		array(
+			'id'        => 4,
+			'latin'     => 'In cuius rei testimonium huic inquisicioni predicti juratores sigilla sua apposuerunt',
+			'reference' => 'C 143/198/2',
+			'search'    => 'C 143/198/2',
+			'answer'    => 'In testimony of which matter the aforesaid jurors have affixed their seals to this inquisition'
+		),
+		array(
+			'id'        => 5,
+			'latin'     => 'Residuum vero bonorum meorum non legatorum do et lego Emmote uxori mee et ipsam facio meam executricem ut ipsa ea \'disponat\'* pro salute anime mee ... (*ut ... disponat so that she may dispose of)',
+			'reference' => 'PROB 11/7 (19 Logge)',
+			'search'    => 'PROB 11/7',
+			'answer'    => 'Indeed, the residue of my goods not bequeathed I give and bequeath to Emmota, my wife, and I make her my executrix so that she may dispose of them for the salvation of my soul ...'
+		)
+	);
+
+	return $form_data;
+}
+
 function practice_00() {
 
 	$form_data = array(
