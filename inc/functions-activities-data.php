@@ -359,6 +359,49 @@ function practice_06() {
 	return $form_data;
 }
 
+function practice_07() {
+
+	$form_data = array(
+		array(
+			'id'        => 1,
+			'latin'     => '... licencia nostra super hiis non optenta ...',
+			'reference' => 'C 143/198/1',
+			'search'    => 'C 143/198/1',
+			'answer'    => '... our licence concerning these things not having been obtained ...'
+		),
+		array(
+			'id'        => 2,
+			'latin'     => 'Hec indentura facta septimo die Novembris ...',
+			'reference' => 'C 54/2222',
+			'search'    => 'C 54/2222',
+			'answer'    => 'This indenture having been made on the seventh day of November ...'
+		),
+		array(
+			'id'        => 3,
+			'latin'     => '... nos pietate moti de gratia nostra speciali ... pardonavimus',
+			'reference' => 'C 66/1421 folio 25',
+			'search'    => 'C 66/1421',
+			'answer'    => '... we, having been moved by piety, of our special grace, have pardoned ...'
+		),
+		array(
+			'id'        => 4,
+			'latin'     => 'Item quod predictus Petrus Gerrard dum vixit mentis compos et in sua sana memoria existens testamentum suum suam in se continens ultimam voluntatem fecit ...',
+			'reference' => 'HCA 24/68',
+			'search'    => 'HCA 24/68',
+			'answer'    => 'Also, that the aforesaid Peter Gerrard, while he lived, being sound of mind and in his sane memory, made his testament, containing in itself his last will ...'
+		),
+		array(
+			'id'        => 5,
+			'latin'     => 'Universis sancte matris ecclesie filiis presentes litteras visuris vel audituris frater Robertus permissione divina prior ecclesie cathedralis sancti Swithini Wynton\' et eiusdem loci conventus salutem in domino sempiternam ...',
+			'reference' => 'E 42/284',
+			'search'    => 'E 42/284',
+			'answer'    => 'To all sons of the holy mother church who are about to see or hear the present letters, brother Robert, by divine permission prior of the cathedral church of St Swithin, Winchester, and the convent of the same place, eternal greetings in the lord ...'
+		)
+	);
+
+	return $form_data;
+}
+
 function practice_00() {
 
 	$form_data = array(
