@@ -117,7 +117,8 @@ function advanced_practice( $n, $name, $form_data ) {
 				$reply = '-';
 			}
 			$score = $_POST['score'];
-			if ( $reply == $form_data[$n]['answer'] ) {
+			similar_text($reply, $form_data[$n]['answer'], $percent);
+			if ( $percent > 50 ) {
 				$score++;
 			}
 		} else {
@@ -147,6 +148,7 @@ function advanced_practice( $n, $name, $form_data ) {
 
 	if ( $reply ) {
 		if ( $id == 5 ) {
+			$html .= '<p>Your score is '.$score.' out of 5</p>';
 			$html .= '<a href="'.get_permalink().'" class="button" role="button">Try again</a>';
 		} else {
 			$html .= '<input type="submit" name="submit-'.$id_name.'" id="submit-'.$id_name.'" value="Next sentence">';
@@ -169,11 +171,11 @@ function practice_form_element( $id, $latin, $reference, $search, $answer, $repl
 					<p for="sentence-'.$id.'" class="latin"><em>"'.$latin.'"</em></p>
 					<div class="emphasis-block">
 						<p>Your translation is</p>
-						<p class="reply">"'.$reply.'"</p>
+						<p class="reply">"<strong>'.$reply.'</strong>"</p>
 					</div>
 					<div class="emphasis-block">
 						<p>Correct translation is</p>
-						<p class="answer">"'.$answer.'"</p>
+						<p class="answer">"<strong>'.$answer.'</strong>"</p>
 					</div>
 					<input type="hidden" name="status" value="answer">
 					<input type="hidden" name="sentence" value="'.$id.'">
