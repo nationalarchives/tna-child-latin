@@ -116,6 +116,9 @@ function latin_activity_shortcode( $atts ) {
 		case 'p10':
 			return advanced_practice( 10, 'Deponent and semi-deponent verbs', practice_10() );
 			break;
+		case 'p11':
+			return advanced_practice( 11, 'Gerunds and Gerundives', practice_11() );
+			break;
 	}
 
 	if ( $a['advanced-activity'] ) {

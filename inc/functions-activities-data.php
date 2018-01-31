@@ -531,6 +531,49 @@ function practice_10() {
 	return $form_data;
 }
 
+function practice_11() {
+
+	$form_data = array(
+		array(
+			'id'        => 1,
+			'latin'     => 'Habendum tenendum et gaudendum predictum magnum messuagium sive tenementum ...',
+			'reference' => 'C 54/2222',
+			'search'    => 'C 54/2222',
+			'answer'    => 'To have and hold and enjoy the aforesaid great messuage or tenement ...'
+		),
+		array(
+			'id'        => 2,
+			'latin'     => 'Johannes Wandestre capellanus attachiatus fuit ad respondendum Ade Redgrave de placito ...',
+			'reference' => 'KB 27/555',
+			'search'    => 'KB 27/555',
+			'answer'    => 'John Wandestre, chaplain, was attached to answer to Adam Redgrave concerning a plea ...'
+		),
+		array(
+			'id'        => 3,
+			'latin'     => 'Inquisicio indentata capta apud Wendover ... ad inquirendum post mortem Johannis Collyns ...',
+			'reference' => 'C 142/773/169',
+			'search'    => 'C 142/773/169',
+			'answer'    => 'Inquisition indented, taken at Wendover ... to inquire after the death of John Collyns ...'
+		),
+		array(
+			'id'        => 4,
+			'latin'     => 'Reddendo inde annuatim dicto comiti et heredibus suis duas marcas argenti ad festum sancti Michaelis pro omnibus serviciis consuetudinibus et demandis.',
+			'reference' => 'DL 25/2369',
+			'search'    => 'DL 25/2369',
+			'answer'    => 'Paying thereupon annually to the said earl and his heirs two marks of silver at the festival of St Michael for all services, customs and demands.'
+		),
+		array(
+			'id'        => 5,
+			'latin'     => 'Imprimis lego animam meam deo patri omnipotenti beate Marie virgini atque omnibus sanctis eius corpusque meum sepeliendum in capella sancte Marie Magdalene infra ecclesiam de Witney ...',
+			'reference' => 'PROB 11/7 (19 Logge)',
+			'search'    => 'PROB 11/7',
+			'answer'    => 'First of all I bequeath my soul to God the father almighty, the blessed virgin Mary and all his saints and my body to be buried in the chapel of St Mary Magdalene within the church of Witney ...'
+		)
+	);
+
+	return $form_data;
+}
+
 function practice_00() {
 
 	$form_data = array(
