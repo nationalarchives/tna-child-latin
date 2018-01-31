@@ -316,6 +316,49 @@ function practice_05() {
 	return $form_data;
 }
 
+function practice_06() {
+
+	$form_data = array(
+		array(
+			'id'        => 1,
+			'latin'     => 'Et ulterius juratores predicti super sacramentum suum predictum dicunt quod predictum messuagium cum pertinenciis et cetera premissa cum suis pertinenciis superius mencionata tenentur et tempore mortis predicti Johannis Collyns defuncti tenebantur ...',
+			'reference' => 'C 142/773/169',
+			'search'    => 'C 142/773/169',
+			'answer'    => 'And furthermore the aforesaid jurors say upon their aforesaid oath that the aforesaid messuage with appurtenances and the other premises with their appurtenances, mentioned above, are held and at the time of the death of the aforesaid John Collyns, deceased, were being held ...'
+		),
+		array(
+			'id'        => 2,
+			'latin'     => 'Dies datus est Rannulfo Briton per attornatum suum versus dominum regem ...',
+			'reference' => 'KB 26/125 membrane 2',
+			'search'    => 'KB 26/125',
+			'answer'    => 'A day was given to Rannulf Britoni by his attorney against the lord king ...'
+		),
+		array(
+			'id'        => 3,
+			'latin'     => 'Sciant presentes et futuri quod ego Ada de la More et heredes mei tenemur solvere annuatim decem solidos sterlingorum Thome de Englefeld et heredibus suis ...',
+			'reference' => 'E 210/8782',
+			'search'    => 'E 210/8782',
+			'answer'    => 'Know those present and future that I, Adam de la More, and my heirs are held to pay annually ten shillings of sterling to Thomas de Englefeld and his heirs ...'
+		),
+		array(
+			'id'        => 4,
+			'latin'     => 'Cui commissa fuit administratio omnium et singulorum bonorum jurium et creditorum dicti defuncti ...',
+			'reference' => 'Will of Thomas Pike: PROB 11/593 quire 196 folio 102',
+			'search'    => 'PROB 11/593',
+			'answer'    => 'To whom the administration of all and singular the goods, rights and credits of the said deceased was committed ...'
+		),
+		array(
+			'id'        => 5,
+			'latin'     => 'Item quod dicta navis appellata the St Anthonie tempore capture eiusdem predicte fuit et erat onerata cum centum septuaginta et duabus cistis saccari',
+			'reference' => 'HCA 24/68 document number 51',
+			'search'    => 'HCA 24/68',
+			'answer'    => 'Likewise, that the said ship called the St Anthonie at the time of the aforesaid capture of the same was and had been loaded with 172 boxes of sugar'
+		)
+	);
+
+	return $form_data;
+}
+
 function practice_00() {
 
 	$form_data = array(

@@ -101,6 +101,9 @@ function latin_activity_shortcode( $atts ) {
 		case 'p5':
 			return advanced_practice( 5, 'Pronouns', practice_05() );
 			break;
+		case 'p6':
+			return advanced_practice( 6, 'Passive verbs', practice_06() );
+			break;
 	}
 
 	if ( $a['advanced-activity'] ) {
