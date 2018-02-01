@@ -1,9 +1,22 @@
 <?php
 /**
- * Advanced activity 05
+ * Advanced activities
  */
 
-function form_element( $id, $title, $hint, $option_1, $option_2, $option_3, $answer, $reply ) {
+
+/**
+ * @param $id
+ * @param $title
+ * @param $hint
+ * @param $option_1
+ * @param $option_2
+ * @param $option_3
+ * @param $answer
+ * @param $reply
+ *
+ * @return string
+ */
+function activity_form_element( $id, $title, $hint, $option_1, $option_2, $option_3, $answer, $reply ) {
 
 	if ( $reply ) {
 
@@ -45,6 +58,60 @@ function form_element( $id, $title, $hint, $option_1, $option_2, $option_3, $ans
 	return $html;
 }
 
+/**
+ * @param $id
+ * @param $latin
+ * @param $reference
+ * @param $search
+ * @param $answer
+ * @param $reply
+ * @param $score
+ * @param $class
+ *
+ * @return string
+ */
+function practice_form_element( $id, $latin, $reference, $search, $answer, $reply, $score, $class ) {
+
+	if ( $reply ) {
+
+		$html = '<div class="form-row">
+					<p>Sentence: '.$id.'</p>
+					<p for="sentence-'.$id.'" class="latin"><em>"'.$latin.'"</em></p>
+					<div class="emphasis-block '.$class.'">
+						<p>Your translation is</p>
+						<p class="reply">"'.$reply.'"</p>
+					</div>
+					<div class="emphasis-block correct">
+						<p>Correct translation is</p>
+						<p class="answer">"'.$answer.'"</p>
+					</div>
+					<input type="hidden" name="status" value="answer">
+					<input type="hidden" name="sentence" value="'.$id.'">
+					<input type="hidden" name="score" value="'.$score.'">
+				</div>';
+
+	} else {
+		$html = '<div class="form-row">
+					<p>Sentence: '.$id.'</p>
+					<label for="sentence-'.$id.'" class="latin"><em>"'.$latin.'"</em></label>
+					<p class="form-hint">Catalogue reference: <a href="http://discovery.nationalarchives.gov.uk/results/r?_q='.$search.'" target="_blank">'.$reference.'</a></p>
+					<p>Type your translation in the text box below:</p>
+					<textarea id="sentence-'.$id.'" name="'.$id.'"></textarea>
+					<input type="hidden" name="status" value="question">
+					<input type="hidden" name="sentence" value="'.$id.'">
+					<input type="hidden" name="score" value="'.$score.'">
+				</div>';
+	}
+
+	return $html;
+}
+
+/**
+ * @param $name
+ * @param $form_data
+ *
+ * @return string
+ */
 function advanced_activity( $name, $form_data ) {
 
 	$id_name = strtolower($name);
@@ -82,7 +149,7 @@ function advanced_activity( $name, $form_data ) {
 			}
 		}
 
-		$html .= form_element( $id, $title, $hint, $option_1, $option_2, $option_3, $answer, $reply);
+		$html .= activity_form_element( $id, $title, $hint, $option_1, $option_2, $option_3, $answer, $reply);
 	}
 
 	$html .= '<div class="form-row">';
@@ -99,6 +166,13 @@ function advanced_activity( $name, $form_data ) {
 	return $html;
 }
 
+/**
+ * @param $p
+ * @param $name
+ * @param $form_data
+ *
+ * @return string
+ */
 function advanced_practice( $p, $name, $form_data ) {
 
 	$id_name = 'practice-'.$p;
@@ -163,42 +237,6 @@ function advanced_practice( $p, $name, $form_data ) {
 	}
 
 	$html .= '</div></fieldset></form>';
-
-	return $html;
-}
-
-function practice_form_element( $id, $latin, $reference, $search, $answer, $reply, $score, $class ) {
-
-	if ( $reply ) {
-
-		$html = '<div class="form-row">
-					<p>Sentence: '.$id.'</p>
-					<p for="sentence-'.$id.'" class="latin"><em>"'.$latin.'"</em></p>
-					<div class="emphasis-block '.$class.'">
-						<p>Your translation is</p>
-						<p class="reply">"'.$reply.'"</p>
-					</div>
-					<div class="emphasis-block correct">
-						<p>Correct translation is</p>
-						<p class="answer">"'.$answer.'"</p>
-					</div>
-					<input type="hidden" name="status" value="answer">
-					<input type="hidden" name="sentence" value="'.$id.'">
-					<input type="hidden" name="score" value="'.$score.'">
-				</div>';
-
-	} else {
-		$html = '<div class="form-row">
-					<p>Sentence: '.$id.'</p>
-					<label for="sentence-'.$id.'" class="latin"><em>"'.$latin.'"</em></label>
-					<p class="form-hint">Catalogue reference: <a href="http://discovery.nationalarchives.gov.uk/results/r?_q='.$search.'" target="_blank">'.$reference.'</a></p>
-					<p>Type your translation in the text box below:</p>
-					<textarea id="sentence-'.$id.'" name="'.$id.'"></textarea>
-					<input type="hidden" name="status" value="question">
-					<input type="hidden" name="sentence" value="'.$id.'">
-					<input type="hidden" name="score" value="'.$score.'">
-				</div>';
-	}
 
 	return $html;
 }
