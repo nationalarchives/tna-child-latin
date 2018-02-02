@@ -82,6 +82,48 @@ function latin_activity_shortcode( $atts ) {
 			break;
 	}
 
+	switch ( $a['advanced-activity'] ) {
+		case '5':
+			return advanced_activity( 'Pronouns', activity_05() );
+			break;
+		case 'p1':
+			return advanced_practice( 1, 'Imperfect tense', practice_01() );
+			break;
+		case 'p2':
+			return advanced_practice( 2, 'Pluperfect tense', practice_02() );
+			break;
+		case 'p3':
+			return advanced_practice( 3, 'Future simple', practice_03() );
+			break;
+		case 'p4':
+			return advanced_practice( 4, 'Future perfect tense', practice_04() );
+			break;
+		case 'p5':
+			return advanced_practice( 5, 'Pronouns', practice_05() );
+			break;
+		case 'p6':
+			return advanced_practice( 6, 'Passive verbs', practice_06() );
+			break;
+		case 'p7':
+			return advanced_practice( 7, 'Participles', practice_07() );
+			break;
+		case 'p8':
+			return advanced_practice( 8, 'Comparison of adjectives and adverbs', practice_08() );
+			break;
+		case 'p9':
+			return advanced_practice( 9, 'Subjunctive', practice_09() );
+			break;
+		case 'p10':
+			return advanced_practice( 10, 'Deponent and semi-deponent verbs', practice_10() );
+			break;
+		case 'p11':
+			return advanced_practice( 11, 'Gerunds and Gerundives', practice_11() );
+			break;
+		case 'p12':
+			return advanced_practice( 12, 'Infinitives; accusative and infinitive clause', practice_12() );
+			break;
+	}
+
 	if ( $a['advanced-activity'] ) {
 		$lesson = sprintf("%02d", $a['advanced-activity']);
 		return iframe_activity( '90%', '/advanced-activities/activity'.$lesson.'.html' );

@@ -36,3 +36,27 @@
       left: 0;
       width: 100%;
       height: 100%; }
+
+.activity-form .correct {
+  background-color: #F5FAFA;
+  border-left: 4px solid #008484; }
+  .activity-form .correct .answer {
+    font-weight: 700; }
+  .activity-form .correct .reply {
+    font-weight: 700;
+    color: #008484; }
+.activity-form .wrong {
+  background-color: #fdf2f2;
+  border-left: 4px solid #CB0D07; }
+  .activity-form .wrong .answer {
+    font-weight: 700; }
+  .activity-form .wrong .reply {
+    font-weight: 700;
+    color: #CB0D07; }
+.activity-form .form-hint span {
+  text-decoration: underline; }
+
+.advanced-practice .latin {
+  font-size: 1.2em; }
+.advanced-practice textarea {
+  max-width: 100%; }

@@ -16,6 +16,6 @@ or
 
 `[latin advanced-activity="3"]`
 
-To display a beginners practice activity prefix the value with a `p`:
+To display a practice activity prefix the value with a `p`:
 
 `[latin beginner-activity="p3"]`
