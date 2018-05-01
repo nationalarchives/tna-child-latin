@@ -132,7 +132,7 @@ function latin_activity_shortcode( $atts ) {
 add_shortcode( 'latin', 'latin_activity_shortcode' );
 
 function embed_code( $class, $id, $folder, $file ) {
-	$dir = make_path_relative( get_stylesheet_directory_uri().'/'.$folder );
+	$dir = make_path_relative_no_pre_path( get_stylesheet_directory_uri().'/'.$folder );
 	$html = '<div class="activity-container">
 				<div class="activity %s">
 					<object id="activity-%s">
