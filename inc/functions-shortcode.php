@@ -149,7 +149,7 @@ function embed_code( $class, $id, $folder, $file ) {
 }
 
 function iframe_activity( $ratio, $activity ) {
-	$file = make_path_relative( get_stylesheet_directory_uri().$activity );
+	$file = make_path_relative_no_pre_path( get_stylesheet_directory_uri().$activity );
 	$html = '<div class="activity-container">
 				<div class="iframe" style="padding-bottom:%s">
 					<iframe src="%s" frameborder="0" allowfullscreen></iframe>
