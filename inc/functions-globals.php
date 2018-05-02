@@ -17,11 +17,15 @@ function setThemeGlobals($environment = null) {
         case 'internal':
         case 'development':
             $pre_path = '';
-            $pre_crumbs = array('Latin' => '/');
+            $pre_crumbs = array('Help with your research'         => '/help-with-your-research/',
+                                'Reading old documents'           => '/help-with-your-research/reading-old-documents/',
+                                'Learn medieval Latin' => '/');
             break;
         case 'external':
             $pre_crumbs = array(
-                'Latin' => '/latin/'
+	            'Help with your research'         => '/help-with-your-research/',
+	            'Reading old documents'           => '/help-with-your-research/reading-old-documents/',
+                'Learn medieval Latin' => '/latin/'
             );
             $pre_path = '/latin';
             break;
