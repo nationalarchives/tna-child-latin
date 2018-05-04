@@ -24,8 +24,6 @@ class setThemeGlobalsTest extends PHPUnit_Framework_TestCase
     {
         $result = setThemeGlobals('internal');
         $this->assertEquals($GLOBALS['pre_path'], '');
-	    $this->assertEquals($GLOBALS['pre_crumbs']['Help with your research'], '/help-with-your-research/');
-	    $this->assertEquals($GLOBALS['pre_crumbs']['Reading old documents'], '/help-with-your-research/reading-old-documents/');
 	    $this->assertEquals($GLOBALS['pre_crumbs']['Learn medieval Latin'], '/');
     }
 
@@ -33,14 +31,15 @@ class setThemeGlobalsTest extends PHPUnit_Framework_TestCase
     {
         $result = setThemeGlobals('development');
         $this->assertEquals($GLOBALS['pre_path'], '');
-	    $this->assertEquals($GLOBALS['pre_crumbs']['Help with your research'], '/help-with-your-research/');
-	    $this->assertEquals($GLOBALS['pre_crumbs']['Reading old documents'], '/help-with-your-research/reading-old-documents/');
 	    $this->assertEquals($GLOBALS['pre_crumbs']['Learn medieval Latin'], '/');
     }
 
     public function testResultForExternalTNA() {
         $result = setThemeGlobals('external');
-        $this->assertEquals($GLOBALS['pre_path'], '/latin');
+	    $this->assertEquals($GLOBALS['pre_crumbs']['Help with your research'], '/help-with-your-research/');
+	    $this->assertEquals($GLOBALS['pre_crumbs']['Reading old documents'], '/help-with-your-research/reading-old-documents/');
+	    $this->assertEquals($GLOBALS['pre_crumbs']['Learn medieval Latin'], '/help-with-your-research/reading-old-documents/latin/');
+        $this->assertEquals($GLOBALS['pre_path'], '/help-with-your-research/reading-old-documents/latin');
     }
 
 
