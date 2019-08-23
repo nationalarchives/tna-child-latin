@@ -24,16 +24,16 @@ get_header(); ?>
             <div class="col-md-12">
                 <article>
                     <div class="entry-header">
-                        <h2><?php
+                        <h2 class="separator-heading"><?php
 	                        echo get_post_meta($post -> ID, 'latin_h2', true);
-	                        ?></h2>
+	                        ?>
+                        </h2>
                     </div>
                     <div class="row entry-content">
                         <div class="col-xs-12 col-sm-8 col-md-8">
                             <?php
                             while ( have_posts() ) : the_post();
 	                           the_content();
-
                             endwhile;
                             ?>
                         </div>

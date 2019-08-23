@@ -42,7 +42,7 @@ function dequeue_parent_style()
 
 function get_lessons( $boxes ) {
 	foreach ( $boxes as $box ) { ?>
-		<div class="col-xs-12 col-sm-6">
+		<div class="col-xs-12 col-sm-6 box">
 			<article>
 				<div class="entry-header">
 					<h2>
