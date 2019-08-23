@@ -42,6 +42,8 @@
   }
 }
 .activity-form {
+  background: #dde5d5;
+  padding: 1em;
   .correct {
     background-color: #F5FAFA;
     border-left: 4px solid #008484;
@@ -73,6 +75,6 @@
     font-size: 1.2em;
   }
   textarea {
-    max-width: 100%;
+    max-width: 100% !important;
   }
 }
