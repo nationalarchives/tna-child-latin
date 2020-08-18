@@ -53,7 +53,7 @@ function activity_05() {
 		),
 		array(
 			'id'        => 6,
-			'title'     => 'cum multus [ _____ ]',
+			'title'     => 'cum multis [ _____ ]',
 			'hint'      => 'English: with many <span>others</span>',
 			'option 1'  => 'aliis',
 			'option 2'  => 'alius',
