@@ -1,0 +1,91 @@
+<?xml version="1.0" ?>
+<exercise id="11">
+	<question>
+		<latin><i>indentatis 
+</i></latin>
+		<clue><![CDATA[by the writings indented 
+]]></clue>
+		<english><![CDATA[<i>scriptis… [scriptum, -i (n.)]</i>]]></english>
+
+	</question>
+	<question>
+		<latin><i>sequens
+</i></latin>
+		<clue><![CDATA[the day following
+]]></clue>
+		<english><![CDATA[<i>dies… [dies, diei (m.)]
+</i>]]></english>
+
+	</question>
+	<question>
+		<latin><i>insolutum
+</i></latin>
+		<clue><![CDATA[rent unpaid 
+]]></clue>
+		<english><![CDATA[<i>redditum… [ redditus, -us (m.)]
+</i>]]></english>
+
+	</question>
+	<question>
+		<latin><i>viventis
+</i></latin>
+		<clue><![CDATA[of the wife who is living 
+]]></clue>
+		<english><![CDATA[<i>uxoris… [uxor, uxoris (f.)]
+</i>]]></english>
+
+	</question>
+	<question>
+		<latin><i>procreatis
+</i></latin>
+		<clue><![CDATA[to the heirs begotten 
+]]></clue>
+		<english><![CDATA[<i>heredibus… [heres, heredis (m., f.)]
+</i>]]></english>
+
+	</question>	
+	<question>
+		<latin><i>commissa
+</i></latin>
+		<clue><![CDATA[the administration having been committed
+]]></clue>
+		<english><![CDATA[<i>administracione… [administracio, -ionis (f.) ]
+</i>]]></english>
+
+	</question>
+	<question>
+		<latin><i>presentato
+</i></latin>
+		<clue><![CDATA[Ralph having been presented
+]]></clue>
+		<english><![CDATA[<i>Radulpho… [Radulphus, -i (m.)]
+</i>]]></english>
+
+	</question>
+	<question>
+		<latin><i>capta
+</i></latin>
+		<clue><![CDATA[the inquisition having been taken
+]]></clue>
+		<english><![CDATA[<i>inquisitione… [inquisitio, -ionis (f.)]
+</i>]]></english>
+
+	</question>
+	<question>
+		<latin><i>memoratis
+</i></latin>
+		<clue><![CDATA[the premises having been mentioned
+]]></clue>
+		<english><![CDATA[<i>premissis… [premissa, -orum (n.pl.)]
+</i>]]></english>
+
+	</question>
+	<question>
+		<latin><i>facta
+</i></latin>
+		<clue><![CDATA[the indenture having been made
+]]></clue>
+		<english><![CDATA[<i>indentura…[indentura, -e (f.) ]</i>]]></english>
+
+	</question>										
+</exercise>

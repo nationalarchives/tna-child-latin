@@ -1,3 +1,80 @@
-.latin-home {
-  
+
+.activity-container {
+  margin: 1em auto;
+  max-width: 668px;
+  .activity {
+    position: relative;
+    padding-top: 25px;
+    height: 0;
+    object,
+    embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .one-one {
+    padding-bottom: 100%; /* 1:1 */
+  }
+  .two-one {
+    padding-bottom: 50%; /* 2:1 */
+  }
+  .four-three {
+    padding-bottom: 75%; /* 4:3 */
+  }
+  .three-four {
+    padding-bottom: 128%; /* 3:4 */
+  }
+  .iframe {
+    margin: 1em auto;
+    position: relative;
+    padding-top: 25px;
+    height: 0;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.activity-form {
+  background: #dde5d5;
+  padding: 1em;
+  .correct {
+    background-color: #F5FAFA;
+    border-left: 4px solid #008484;
+    .answer {
+      font-weight: 700;
+    }
+    .reply {
+      font-weight: 700;
+      color: #008484;
+    }
+  }
+  .wrong {
+    background-color: #fdf2f2;
+    border-left: 4px solid #CB0D07;
+    .answer {
+      font-weight: 700;
+    }
+    .reply {
+      font-weight: 700;
+      color: #CB0D07;
+    }
+  }
+  .form-hint span {
+    text-decoration: underline;
+  }
+}
+.advanced-practice {
+  .latin {
+    font-size: 1.2em;
+  }
+  textarea {
+    max-width: 100% !important;
+  }
 }

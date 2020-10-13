@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<exercise id="12">
+	<question>
+		<latin><i>audire</i></latin>
+		<clue><![CDATA[<i>audio, audire, audivi, auditum</i> (4) to hear]]></clue>
+		<english><![CDATA[to hear]]></english>
+	</question>
+	<question>
+		<latin><i>fossatus esse</i></latin>
+		<clue><![CDATA[<i>fosso, fossare, fossavi, fossatum</i> (1) to dig]]></clue>
+		<english><![CDATA[to have been dug]]></english>
+	</question>
+	<question>
+		<latin><i>repperisse</i></latin>
+		<clue><![CDATA[<i>reperio, reperire, repperi, repertum</i> (4) to find]]></clue>
+		<english><![CDATA[to have found]]></english>
+	</question>
+	<question>
+		<latin><i>ratificaturus esse</i></latin>
+		<clue><![CDATA[<i>ratifico, ratificare, ratificavi, ratificatum</i> (1) to ratify]]></clue>
+		<english><![CDATA[to be about to ratify]]></english>
+	</question>
+	<question>
+		<latin><i>factus fore</i></latin>
+		<clue><![CDATA[<i>facio, facere, feci, factum</i> (3) to do]]></clue>
+		<english><![CDATA[to be about to be done]]></english>
+	</question>	
+	<question>
+		<latin><i>imponi</i></latin>
+		<clue><![CDATA[<i>impono, imponere, imposui, impositum</i> (3) to impose]]></clue>
+		<english><![CDATA[to be imposed]]></english>
+	</question>
+	<question>
+		<latin><i>constitutus fore</i></latin>
+		<clue><![CDATA[<i>constituo, constituere, constitui, constitutum</i> (3) to appoint, establish]]></clue>
+		<english><![CDATA[to be about to be appointed <font color="#CC0000">or</font> to be about to be established]]></english>
+	</question>
+	<question>
+		<latin><i>serviri</i></latin>
+		<clue><![CDATA[<i>servio, servire, servivi or servii, servitum</i> (4) to serve]]></clue>
+		<english><![CDATA[to be served]]></english>
+	</question>
+	<question>
+		<latin><i>morari</i></latin>
+		<clue><![CDATA[<i>moror, morari, moratus sum</i> (1) to delay]]></clue>
+		<english><![CDATA[to delay]]></english>
+	</question>
+	<question>
+		<latin><i>renovari</i></latin>
+		<clue><![CDATA[<i>renovo, renovare, renovavi, renovatum</i> (1) to renew]]></clue>
+		<english><![CDATA[to be renewed]]></english>
+	</question>										
+</exercise>

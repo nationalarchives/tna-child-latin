@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<exercise id="01">
+	<question>
+		<latin><i>vendebamus</i></latin>
+		<clue><![CDATA[<i>vendo, vendere, vendidi, venditum</i> (3) to sell]]></clue>
+		<english><![CDATA[we were selling <font color="#CC0000">or</font> </font> we used to sell]]></english>
+	</question>
+	<question>
+		<latin><i>veniebant</i></latin>
+		<clue><![CDATA[<i>venio, venire, veni, ventum</i> (4) to come]]></clue>
+		<english><![CDATA[they were coming <font color="#CC0000">or</font> they used to come]]></english>
+	</question>
+	<question>
+		<latin><i>apparebat</i></latin>
+		<clue><![CDATA[<i>appareo, apparere, apparui, apparitum</i> (3) to appear]]></clue>
+		<english><![CDATA[he/she/it was appearing <font color="#CC0000">or</font> he/she/it used to appear]]></english>
+	</question>
+	<question>
+		<latin><i>tenebam</i></latin>
+		<clue><![CDATA[<i>teneo, tenere, tenui, tentum</i> (2) to hold]]></clue>
+		<english><![CDATA[I was holding <font color="#CC0000">or</font> I used to hold]]></english>
+	</question>
+	<question>
+		<latin><i>serviebat</i></latin>
+		<clue><![CDATA[<i>servio, servire, servivi, servitum</i> (4) to serve]]></clue>
+		<english><![CDATA[he/she/it was serving <font color="#CC0000">or</font> he/she/it used to serve]]></english>
+	</question>
+	<question>
+		<latin><i>dabam</i></latin>
+		<clue><![CDATA[<i>do, dare, dedi, datum</i> (1) to give]]></clue>
+		<english><![CDATA[I was giving <font color="#CC0000">or</font> I used to give]]></english>
+	</question>
+	<question>
+		<latin><i>videbatis</i></latin>
+		<clue><![CDATA[<i>video, videre, vidi, visum</i> (2) to see]]></clue>
+		<english><![CDATA[you were seeing <font color="#CC0000">or</font> you used to see]]></english>
+	</question>	
+	<question>
+		<latin><i>concedebas</i></latin>
+		<clue><![CDATA[<i>concedo, concedere, concessi, concessum</i> (3) to grant]]></clue>
+		<english><![CDATA[you were granting <font color="#CC0000">or</font> you used to grant]]></english>
+	</question>
+	<question>
+		<latin><i>confirmabant</i></latin>
+		<clue><![CDATA[<i>confirmo, confirmare, confirmavi, confirmatum</i> (1) to confirm]]></clue>
+		<english><![CDATA[they were confirming <font color="#CC0000">or</font> they used to confirm]]></english>
+	</question>	
+	<question>
+		<latin><i>habebam</i></latin>
+		<clue><![CDATA[<i>habeo, habere, habui, habitum</i> (2) to have]]></clue>
+		<english><![CDATA[I was having <font color="#CC0000">or</font> I used to have]]></english>
+	</question>								
+</exercise>

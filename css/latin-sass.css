@@ -1,1 +1,65 @@
 /*! TNA Latin styles */
+.activity-container {
+  margin: 1em auto;
+  max-width: 668px; }
+  .activity-container .activity {
+    position: relative;
+    padding-top: 25px;
+    height: 0; }
+    .activity-container .activity object,
+    .activity-container .activity embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+  .activity-container .one-one {
+    padding-bottom: 100%;
+    /* 1:1 */ }
+  .activity-container .two-one {
+    padding-bottom: 50%;
+    /* 2:1 */ }
+  .activity-container .four-three {
+    padding-bottom: 75%;
+    /* 4:3 */ }
+  .activity-container .three-four {
+    padding-bottom: 128%;
+    /* 3:4 */ }
+  .activity-container .iframe {
+    margin: 1em auto;
+    position: relative;
+    padding-top: 25px;
+    height: 0; }
+    .activity-container .iframe iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+
+.activity-form {
+  background: #dde5d5;
+  padding: 1em; }
+  .activity-form .correct {
+    background-color: #F5FAFA;
+    border-left: 4px solid #008484; }
+    .activity-form .correct .answer {
+      font-weight: 700; }
+    .activity-form .correct .reply {
+      font-weight: 700;
+      color: #008484; }
+  .activity-form .wrong {
+    background-color: #fdf2f2;
+    border-left: 4px solid #CB0D07; }
+    .activity-form .wrong .answer {
+      font-weight: 700; }
+    .activity-form .wrong .reply {
+      font-weight: 700;
+      color: #CB0D07; }
+  .activity-form .form-hint span {
+    text-decoration: underline; }
+
+.advanced-practice .latin {
+  font-size: 1.2em; }
+.advanced-practice textarea {
+  max-width: 100% !important; }
