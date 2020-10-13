@@ -10,6 +10,10 @@
  */
 function identifyEnvironmentFromIP($server_ip = null, $client_ip = null)
 {
+    if (isset($_SERVER['HTTP_X_NGINX_PROXY'])) {
+        return 'aws_public';
+    }
+    
     if ($server_ip === null || $client_ip === null) {
         throw new BadFunctionCallException('identifyEnvironmentFromIP function must be passed at IP');
     }
