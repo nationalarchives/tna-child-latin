@@ -14,8 +14,6 @@ function tna_child_scripts() {
 	wp_register_script( 'global-jquery', get_template_directory_uri() . '/js/lib/jquery-1.11.3.min.js', array(), '1.11.3' );
 	wp_register_script( 'modernizr', get_template_directory_uri() . '/js/lib/modernizr.js', array(), '2.8.3', false );
 	wp_register_script( 'tna-base-min', get_template_directory_uri() . '/js/compiled/tna-base.min.js', array(), EDD_VERSION, true );
-	wp_register_script( 'webtrends', get_template_directory_uri() . '/js/lib/webtrends.js', array(), EDD_VERSION, true );
-	wp_register_script( 'tna-base-flickr', 'https://www.nationalarchives.gov.uk/scripts/footer-img.js', array(), EDD_VERSION, true );
 
 	if ( is_page_template( 'page-home.php' )) {
 		wp_register_script( 'equal-heights', get_template_directory_uri() . '/js/lib/jQuery.equalHeights.js', array(),
