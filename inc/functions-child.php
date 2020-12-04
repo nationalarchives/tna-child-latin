@@ -26,9 +26,7 @@ function tna_child_scripts() {
 
 	wp_enqueue_script( 'global-jquery' );
 	wp_enqueue_script( 'modernizr' );
-	wp_enqueue_script( 'webtrends' );
 	wp_enqueue_script( 'tna-base-min' );
-	wp_enqueue_script( 'tna-base-flickr' );
 }
 
 // Dequeue parent styles for re-enqueuing in the correct order
