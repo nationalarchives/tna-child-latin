@@ -74,4 +74,4 @@ function wp_cookies() {
 
 add_action('init', 'wp_cookies');
 
-setcookie('wpb_visit_time',  date('F j, Y g:i a'), time()+31556926);
+setcookie('wpb_visit_time',  date('F j, Y g:i a'), time()+31556926, ,‘/’);
