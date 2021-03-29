@@ -62,15 +62,13 @@ $manage_acceptable_group_cookie_list = new Manage_Acceptable_Group_Cookie_List(
 
 function wp_cookies() { 
     // Check if cookie is already set
-    if(!isset($_COOKIE['cookies_policy'])) {
-        $cookie_group_list_to_json = json_encode( $manage_acceptable_group_cookie_list );
-        setcookie('cookies_policy', $cookie_group_list_to_json, time()+31556926  ,‘/’);
-        /**
-        * Call $_COOKIE directly after was set so it can be accessed
-        * without having to reload or navigate to a different page
-        */
-        $_COOKIE[‘cookies_policy’] = $cookie_group_list_to_json;
-    }  
+    $cookie_group_list_to_json = json_encode( $manage_acceptable_group_cookie_list );
+    setcookie('cookies_policy', $cookie_group_list_to_json, time()+31556926  ,‘/’);
+    /**
+    * Call $_COOKIE directly after was set so it can be accessed
+    * without having to reload or navigate to a different page
+    */
+    $_COOKIE[‘cookies_policy’] = $cookie_group_list_to_json;
 } 
 
 add_action('init', 'wp_cookies');
