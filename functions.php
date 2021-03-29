@@ -68,7 +68,7 @@ function wp_cookies() {
     * Call $_COOKIE directly after was set so it can be accessed
     * without having to reload or navigate to a different page
     */
-    $_COOKIE[‘cookies_policy’] = $cookie_group_list_to_json;
+    $_COOKIE['cookies_policy'] = $cookie_group_list_to_json;
 } 
 
 add_action('init', 'wp_cookies');
