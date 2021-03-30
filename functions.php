@@ -62,8 +62,12 @@ $manage_acceptable_group_cookie_list = new Manage_Acceptable_Group_Cookie_List(
 
 function wp_cookies() { 
     // Check if cookie is already set
+    if ( ! is_admin() && ! isset( $_COOKIE['sitename_new_visitor'] ) ) {
+		setcookie( 'sitename_new_visitor', 1, time() + 3600 * 24 * 100, '/', 'nationalarchives.gov.uk', false );
+	}
+
     $cookie_group_list_to_json = json_encode( $manage_acceptable_group_cookie_list );
-    setcookie('cookies_policy', $cookie_group_list_to_json, time()+31556926  ,‘/’);
+    setcookie('cookies_policy', $cookie_group_list_to_json, time()+31556926  , '/');
     
     /**
     * Call $_COOKIE directly after was set so it can be accessed
@@ -73,5 +77,3 @@ function wp_cookies() {
 } 
 
 add_action('init', 'wp_cookies');
-
-setcookie('wpb_visit_time',  date('F j, Y g:i a'), time()+31556926, ,'/');
