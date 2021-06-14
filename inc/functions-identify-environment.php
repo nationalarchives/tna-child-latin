@@ -10,7 +10,8 @@
  */
 function identifyEnvironmentFromIP($server_ip = null, $client_ip = null)
 {
-    if (isset($_SERVER['HTTP_X_NGINX_PROXY'])) {
+    $headers = apache_request_headers();
+    if ( isset($_SERVER['HTTP_X_NGINX_PROXY']) && isset($headers['X_HOST_TYPE']) && $headers['X_HOST_TYPE'] == 'public' ) {
         return 'aws_public';
     }
     
