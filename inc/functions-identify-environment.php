@@ -11,10 +11,10 @@
 function identifyEnvironmentFromIP($server_ip = null, $client_ip = null)
 {
     $headers = apache_request_headers();
-    if ( isset($_SERVER['HTTP_X_NGINX_PROXY']) && isset($headers['X_HOST_TYPE']) && $headers['X_HOST_TYPE'] == 'public' ) {
+    if ( isset($_SERVER['HTTP_X_NGINX_PROXY']) && isset($headers['X-Host-Type']) && $headers['X-Host-Type'] == 'public' ) {
         return 'aws_public';
     }
-    
+
     if ($server_ip === null || $client_ip === null) {
         throw new BadFunctionCallException('identifyEnvironmentFromIP function must be passed at IP');
     }
